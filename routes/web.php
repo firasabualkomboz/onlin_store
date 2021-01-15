@@ -15,11 +15,36 @@
 //     return view('front.home');
 // });
 
-// Auth::routes();
+//->middleware('verified')
 
-// Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes();
+Auth::routes(['verify' => true]);
 
-Route::get('/home', 'HomeController@index')->name('front.home');
+
+Route::group(['middleware' => ['auth']], function () {
+
+    Route::get('/logout', 'LoginController@logout')->name('logout');
+});
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/logout', 'HomeController@logout')->name('home');
+
+
+//Route::group(['middleware' => 'auth'], function () {
+//    if (Auth::check()) {
+//        if(Auth::user()){
+//            Route::get('/home','HomeController@index');
+//        }
+//        else if(Auth::user()){
+//            Route::get('/','HomeController@authroute');
+//        }
+//    }
+//});
+
+//Route::get('/home', 'HomeController@index')->name('front.home');
+
+
 
 Route::get('/Product-details/{id}', 'HomeController@Productdetails')->name('front.details_product');
 
@@ -30,3 +55,4 @@ Route::get('/order/{id}', 'HomeController@order')->name('front.Order');
 
 
 
+Route::post('/charge', 'Admin\ProductController@charge')->name('cart.charge');

@@ -10,17 +10,21 @@ use App\Models\MainCategory;
 use App\Models\Cart;
 use Illuminate\Support\Str;
 use Cartalyst\Stripe\Laravel\Facades\Stripe;
+use Intervention\Image\Facades\Image;
 class ProductController extends Controller
 
 {
         public function index(){
 
         return view ('admin.product.index')->with('product',Product::all());
-        }
+
+        } //end fun index
 
 
         public function create(){
+
         $maincategory = MainCategory::where('translation_of',0)->active()->get();
+
         return view('admin.product.create',compact('maincategory'))->with('subsection',Section::all());
 
         }
@@ -28,37 +32,36 @@ class ProductController extends Controller
 
         public function store(Request $request){
 
+
             $this->validate($request,[
-                "name"     => "required",
-                "price"   => "required",
-                "main_category_id"   => "required",
-                // "sub_section_id"   => "required",
-                "photoone"  => "required|image",
+
+                'name'                   => 'required',
+                'price'                  =>  'required',
+                'main_category_id'       => 'required',
+                'photoone'               =>'required|image'
 
             ]);
 
-
-            $photoone = $request->photoone;
-            $photoone_new_name = time().$photoone->getClientOriginalName();
-            $photoone->move('uploads/image/product/',$photoone_new_name);
-
+           $photoone = $request->photoone;
+           $photoone_new_name = time().$photoone->getClientOriginalName();
+           $photoone->move('uploads/image/product/',$photoone_new_name);
 
 
-            $post = Product::create([
-                "name"    => $request->name,
-                "price"   => $request->price,
-                "main_category_id"   => $request->main_category_id,
-                // "sub_section_id"   => $request->sub_section_id,
-                "photoone" => 'uploads/image/product/'.$photoone_new_name,
-
+            $product = Product::create ([
+                'name'  => $request->name,
+                'price'  => $request->price,
+                'main_category_id'  => $request->main_category_id,
+                'photoone'  =>  'uploads/image/product/'.$photoone_new_name,
             ]);
 
+            return redirect()->back();
 
 
-             return redirect()->back();
-             // dd($request->all());
+
+
 
         }
+
 
 
         public function addToCart(Product $product) {
@@ -74,7 +77,8 @@ class ProductController extends Controller
             $cart->add($product);
             // dd($cart);
             session()->put('cart', $cart);
-            return redirect()->route('front.home')->with('success', 'تم اضافة المنتج الى السلة');
+            // return redirect()->route('front.home')->with('success', 'تم اضافة المنتج الى السلة'); //false
+            return redirect()->route('home')->with('success', 'تم اضافة المنتج الى السلة'); //true
         }
 
         public function showCart() {
@@ -95,28 +99,60 @@ class ProductController extends Controller
 
     }
 
-    public function charge(Request $request) {
+    // public function charge(Request $request) {
 
-        //dd($request->stripeToken);
-        $charge = Stripe::charges()->create([
-            'currency' => 'USD',
-            'source' => $request->stripeToken,
-            'amount'   => $request->amount,
-            'description' => ' Test from laravel new app'
+    //     //dd($request->stripeToken);
+    //     $charge = Stripe::charges()->create([
+    //         'currency' => 'USD',
+    //         'source' => $request->stripeToken,
+    //         'amount'   => $request->amount,
+    //         'description' => ' Test from laravel new app'
+    //     ]);
+
+    //     $chargeId = $charge['id'];
+
+    //     if ($chargeId) {
+    //         // save order in orders table ...
+    //         // clearn cart
+
+    //         session()->forget('cart');
+    //         return redirect()->route('store')->with('success', " Payment was done. Thanks");
+    //     } else {
+    //         return redirect()->back();
+    //     }
+    // }
+
+
+public function charge(Request $request) {
+
+    //dd($request->stripeToken);
+
+    $charge = Stripe::charges()->create([
+        'currency' => 'USD',
+        'source' => $request->stripeToken,
+        'amount'   => $request->amount,
+        'description' => ' Test from laravel new app'
+    ]);
+
+    $chargeId = $charge['id'];
+
+    if ($chargeId) {
+
+        // clearn cart
+          // save order in orders table ...
+
+          auth()->user()->orders()->create([
+            'cart' => serialize( session()->get('cart'))
         ]);
+        // clearn cart
 
-        $chargeId = $charge['id'];
 
-        if ($chargeId) {
-            // save order in orders table ...
-            // clearn cart
-
-            session()->forget('cart');
-            return redirect()->route('store')->with('success', " Payment was done. Thanks");
-        } else {
-            return redirect()->back();
-        }
+        session()->forget('cart');
+        return redirect()->route('store')->with('success', " Payment was done. Thanks");
+    } else {
+        return redirect()->back();
     }
+}
 
 
     public function destroy($id){

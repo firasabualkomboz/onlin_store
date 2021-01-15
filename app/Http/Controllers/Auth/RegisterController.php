@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
+use App\Http\Controllers\MailController;
+use App\Providers\RouteServiceProvider;
+use Illuminate\Http\Request;
 class RegisterController extends Controller
 {
     /*
@@ -23,29 +26,15 @@ class RegisterController extends Controller
 
     use RegistersUsers;
 
-    /**
-     * Where to redirect users after registration.
-     *
-     * @var string
-     */
+
     protected $redirectTo = '/home';
 
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
     public function __construct()
     {
         $this->middleware('guest');
     }
 
-    /**
-     * Get a validator for an incoming registration request.
-     *
-     * @param  array  $data
-     * @return \Illuminate\Contracts\Validation\Validator
-     */
+
     protected function validator(array $data)
     {
         return Validator::make($data, [
@@ -55,12 +44,7 @@ class RegisterController extends Controller
         ]);
     }
 
-    /**
-     * Create a new user instance after a valid registration.
-     *
-     * @param  array  $data
-     * @return \App\User
-     */
+
     protected function create(array $data)
     {
         return User::create([
@@ -69,4 +53,36 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
     }
+
+    // public function register(Request $request)
+    // {
+    //     $user = new User();
+    //     $user->name = $request->name;
+    //     $user->email = $request->email;
+    //     $user->password = Hash::make($request->password);
+    //     $user->verification_code = sha1(time());
+    //     $user->save();
+
+    //     // send email
+    //     if($user != null){
+    //         MailController::sendSignupEmail($user->name, $user->email, $user->verification_code);
+    //         return redirect()->back()->with(session()->flash('alert-success', 'Your account has been created. Please check email for verification link.'));
+    //     }
+
+    //     return redirect()->back()->with(session()->flash('alert-danger', 'Something went wrong!'));
+    //     // send message
+    // }
+
+    // public function verifyUser(Request $request){
+    //     $verification_code = \Illuminate\Support\Facades\Request::get('code');
+    //     $user = User::where(['verification_code' => $verification_code])->first();
+    //     if($user != null){
+    //         $user->is_verified = 1;
+    //         $user->save();
+    //         return redirect()->route('login')->with(session()->flash('alert-success', 'Your account is verified. Please login!'));
+    //     }
+
+    //     return redirect()->route('login')->with(session()->flash('alert-danger', 'Invalid verification code!'));
+    // }
+
 }

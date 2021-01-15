@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -22,8 +21,13 @@
     <link rel="stylesheet" href="{{asset('assets/fronts/css/owl.carousel.min.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('assets/fronts/css/slicknav.min.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('assets/fronts/css/style.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('assets/fronts/css/custom.css')}}" type="text/css">
+
+
+
 </head>
 <body>
+
 
     @yield('content')
 
@@ -100,7 +104,7 @@
                         <div class="footer__copyright">
                             <div class="footer__copyright__text">
  <p> جميع الحقوق محفوظة
-  <a href="https://colorlib.com" target="_blank">< / feraskomboz ></a>
+  <a href="#" target="_blank">< / feraskomboz ></a>
    </p></div>
                             <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
                         </div>
@@ -111,6 +115,8 @@
         <!-- Footer Section End -->
 
         <!-- Js Plugins -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="{{asset('assets/fronts/js/notify.min.js')}}"></script>
         <script src="{{asset('assets/fronts/js/jquery-3.3.1.min.js')}}"></script>
         <script src="{{asset('assets/fronts/js/bootstrap.min.js')}}"></script>
         <script src="{{asset('assets/fronts/js/jquery.nice-select.min.js')}}"></script>
@@ -119,10 +125,5 @@
         <script src="{{asset('assets/fronts/js/mixitup.min.js')}}"></script>
         <script src="{{asset('assets/fronts/js/owl.carousel.min.js')}}"></script>
         <script src="{{asset('assets/fronts/js/main.js')}}"></script>
-
-
-
-
-
 
 

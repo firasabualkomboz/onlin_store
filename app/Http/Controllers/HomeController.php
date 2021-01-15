@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
-use\App\Models\MainCategory;
-use\App\Models\Product;
+use App\Models\MainCategory;
+use Illuminate\Support\Facades\Auth;
+
 class HomeController extends Controller
 {
     /**
@@ -52,7 +54,6 @@ class HomeController extends Controller
         $product = Product::find($id);
         // $productref = Product::where('main_category_id',7)->get(4);
         return view('front.details_product', ['product' => $product])
-
         ->with('productref',Product::where('main_category_id',7)->take(4)->get())
         ->with('maincato',MainCategory::where('translation_of',0)->active()->get())
         // ->with('fastionproduct',Product::where('main_category_id',16)->get())
@@ -62,11 +63,17 @@ class HomeController extends Controller
     }
 
 
+    public function authroute(){
+        return "page not found ";
+    }
 
 
+ public function logout()
+ {
+    Auth::logout();
 
-
-
+    return redirect()->route('home')->with(['success'=>' تمت عملية تسجيل الخروج ']);
+ }
 
 
 

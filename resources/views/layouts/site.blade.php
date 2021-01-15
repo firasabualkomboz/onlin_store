@@ -84,7 +84,6 @@ var static_token = "28add935523ef131c8432825597b9928";
   @include('front.include.header-mobile')
   @include('front.include.header-top')
   @include('front.include.header-center')
-  @include('front.include.header-bootom')
 
 
 

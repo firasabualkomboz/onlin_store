@@ -1,52 +1,59 @@
-<div class="header__top"  >
-    <div class="container" >
-        <div class="row" >
-
-            <div class="col-lg-6 col-md-6">
-
-                <div class="header__top__left" >
-                    <ul>
-                        <li><i class="fa fa-envelope"></i> feras@gmail.com</li>
-                        <li>تسوق الأن داخل غزة والتوصيل مجاني </li>
-                    </ul>
+ {{-- section nav bar  --}}
+    <section class="header-v1">
+        <div class="container">
+           <div class="row">
+               <div class="col-lg-3">
+                <div class="item-v1">
+            <ol>
+                <li><img src="assets/fronts/img/logo.png" alt=""></li>
+            </ol>
                 </div>
+               </div>
 
-
-            </div>
-
-            <div class="col-lg-6 col-md-6" >
-
-                <div class="header__top__right">
-
-                    {{-- <div class="header__top__right__social">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                        <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                    </div> --}}
-
-                    <div class="header__top__right__language">
-                        <img src="img/language.png" alt="">
-                        <div>English</div>
-                        <span class="arrow_carrot-down"></span>
-                        <ul>
-                            <li><a href="#">Arabic</a></li>
-                            <li><a href="#">English</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="header__top__right__auth">
-                        <a href="#"><i class="fa fa-user"></i> تسجيل دخول مستخدم</a>
-                    </div>
-
-
-
+               <div class="col-lg-6">
+                <div class="item-2-v1">
+               <ol>
+                <li><i class="fa fa-home"></i></li>
+                   <li> من نحن </li>
+                   <li> خدماتنا</li>
+                   <li> الأقسام</li>
+                   <li> عملاءنا</li>
+                   <li> تواصل معنا </li>
+               </ol>
                 </div>
+             </div>
+
+             <div class="col-lg-3">
+                <div class="item-3-v1">
+               <ol>
+                <li><a><i class="fa fa-heart"></i><span>1</span></a></li>
+
+                <li><a class="cart" href="{{route('cart.show')}}">
+                <i class="fa fa-shopping-bag"></i>
+                <span>( {{ session()->has('cart') ? session()->get('cart')->totalQty : '0' }})</span>
+                </a></li>
+
+                @if(Auth::check())
+                <li>
+                <a>
+                <span class="fa fa-user"></span> أهلاً بك  </a>
+                {{ auth()->user()->name }}
+               <a class="btn-logout"  href="/logout"><i class="fa fa-sign-out"></i></a>
+                </li>
+
+                @else
+                <li><button class="btn-login"><a target="_blank" href="/login"><span class="fa fa-user"> تسجيل دخول  </span></a></button></li>
+                @endif
 
 
-            </div>
+               </ol>
+                </div>
+             </div>
 
 
+           </div>
         </div>
-    </div>
-</div>
+    </section>
+
+
+    {{-- end section navbar --}}

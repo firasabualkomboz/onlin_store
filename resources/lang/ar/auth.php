@@ -13,7 +13,19 @@ return [
     |
     */
 
-    'failed' => 'These credentials do not match our records.',
+    // 'failed' => 'These credentials do not match our records.',
+    'failed' => 'عذراً هذه البيانات غير موجود ',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
+
+    "email" => 'الأيميل الشخصي ',
+    "all"=>'الكل',
+    "fashone" => ' فاشون ',
+    "electoronic" => 'الكترونيات',
+    "mobile" => 'موبايل',
+    "vegetables" => 'العاب وهدايا',
+    "sala" => 'السلة  ',
+    "fastfood" => 'صحة وجمال  ',
+
+
 
 ];
