@@ -31,8 +31,28 @@
 
     @yield('content')
 
+    <footer>
+        <div class="container">
+        <div class="row">
 
-        <!-- Footer Section Begin -->
+            <div class="col-lg-9">
+
+    <div class="last-text">
+      <p>  زاجل غزة لعرض وتسويق وبيع المنتجات المحلية وتوصيلها داخل غزة ويمكن لاي تاجر التواصل معنا لعرض منتجاته</p>
+</div>
+
+    </div>
+
+        <div class="col-lg-3">
+            <i class="fa fa-edit"> feras anwer </i>
+        </div>
+
+</div>
+
+        </div>
+    </footer>
+
+        {{-- <!-- Footer Section Begin -->
         <footer dir="rtl" class="footer spad">
             <div class="container">
                 <div class="row">
@@ -47,72 +67,31 @@
                                 <li>المحلية وتوصيلها داخل غزة ويمكن لاي  </li>
                                 <li> تاجر التواصل معنا لعرض منتجاته  </li>
                             </ul>
-                        </div>
-                    </div>
+                            <div class="footer__widget">
+                                <form action="{{route('comment')}}" method="POST">
+                                    <input type="text" style="text-align:left" placeholder="ارسل تعليقك">
+                                    <button type="submit" class="site-btn">إرسال </button>
+                                </form>
 
-
-
-                    <div style="text-align: right" class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
-                        <div class="footer__widget">
-                            <h6>المعلومات </h6>
-                            <ul>
-
-                                <li><a href="#">عن المتجر</a></li>
-                                <li><a href="#">المدونة العامة</a></li>
-                                <li><a href="#">أرغب في البيع<br> على متجر زاجل</a></li>
-                                <li><a href="#">تواصل معنا</a></li>
-                                <li><a href="#">أسئلة شائعة</a></li>
-                            </ul>
-
-
-
-                            <ul>
-
-                                <li><a href="#">سياسة الاستبدال</a></li>
-                                <li><a href="#">سياسة الخصوصية</a></li>
-                                <li><a href="#">الأحكام والشروط</a></li>
-                                <li><a href="#">كيفية الشراء من المتجر</a></li>
-                                <li><a href="#">طرق التسليم</a></li>
-                                <li><a href="#">الإبلاغ عن إرجاع أو استبدال الطرود</a></li>
-
-                            </ul>
-
-
-                        </div>
-                    </div>
-
-                    <div style="text-align: right" class="col-lg-4 col-md-12">
-                        <div class="footer__widget">
-                            <h6>قم بدعم الموقع </h6>
-                            <p>يمكنك كتابة اي ملاحظة او رسالة تود اعلامنا بها </p>
-                            <form action="#">
-                                <input type="text" style="text-align: center" placeholder="اكتب تعليقك | رسالتك لنا ">
-                                <button type="submit" class="site-btn">إرسال </button>
-                            </form>
-                            <div class="footer__widget__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
                             </div>
+
                         </div>
                     </div>
+
 
                 </div>
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="footer__copyright">
-                            <div class="footer__copyright__text">
- <p> جميع الحقوق محفوظة
-  <a href="#" target="_blank">< / feraskomboz ></a>
-   </p></div>
-                            <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
-                        </div>
-                    </div>
+<div class="col-lg-12">
+<div class="footer__copyright">
+<div class="footer__copyright__text">
+<a href="">feras anwer </a></div>
+<div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
+</div>
+</div>
                 </div>
             </div>
         </footer>
-        <!-- Footer Section End -->
+        <!-- Footer Section End --> --}}
 
         <!-- Js Plugins -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

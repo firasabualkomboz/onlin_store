@@ -8,11 +8,9 @@ Route::group(['namespace'=>'Admin' ,  'middleware' => 'auth:admin'], function ()
     Route::get('/', 'DashboardController@index')  ->name('admin.dashboard');
 
 
-    // route languages
-
+// ************************************ languages ************************************
 
     Route::group(['prefix' => 'languages'], function () {
-
 
         Route::get('/', 'languagesController@index')->name('admin.languages');
         Route::get('create', 'languagesController@create')->name('admin.languages.create');
@@ -22,10 +20,9 @@ Route::group(['namespace'=>'Admin' ,  'middleware' => 'auth:admin'], function ()
         Route::post('update/{id}', 'languagesController@update')->name('admin.languages.update');
         Route::get('delete/{id}', 'languagesController@destroy')->name('admin.languages.delete');
 
-
     });
+// ************************************ languages ************************************
 
-    // end route languages
 
 
 // ************************************ main categories ************************************
@@ -47,7 +44,7 @@ Route::group(['namespace'=>'Admin' ,  'middleware' => 'auth:admin'], function ()
 // ************************************ end  main categories ************************************
 
 
-// ************************************ main categories ************************************
+// ************************************  Sub_categories ************************************
 Route::group(['prefix' => 'Sub_categories'], function () {
 
 
@@ -62,7 +59,7 @@ Route::group(['prefix' => 'Sub_categories'], function () {
 
 });
 
-// ************************************ end  main categories ************************************
+// ************************************ end  Sub_categories ************************************
 
 // ************************************ product  ************************************
 Route::group(['prefix' => 'product'], function () {
@@ -87,7 +84,18 @@ Route::group(['prefix' => 'product'], function () {
 
 // ************************************ end  product  ************************************
 
+// ************************************ permission  ************************************
 
+
+
+
+Route::group(['prefix' => 'permission'], function () {
+
+    Route::get('/', 'PermissionController@index')->name('admin.permission');
+    Route::get('create', 'PermissionController@create')->name('admin.permission.create');
+
+
+});
 
 
 
@@ -109,27 +117,21 @@ Route::group(['prefix' => 'vendors'], function () {
 
 // ************************************ end  vendors ************************************
 
-
-
-
-
-
 });
 
 
-
-
-
-
+// *********
 
 Route::group(['namespace' => 'Admin', 'middleware' => 'guest:admin'], function () {
+
     Route::get('login', 'LoginController@getLogin')->name('get.admin.login');
     Route::POST('login', 'LoginController@login')->name('admin.login');
-});
-
-
-Route::get('tester', function () {
-
-    return feras();
 
 });
+
+
+// Route::get('tester', function () {
+
+//     return feras();
+
+// });

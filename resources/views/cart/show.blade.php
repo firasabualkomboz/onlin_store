@@ -2,11 +2,21 @@
 
 @section('content')
 
+@include('front.include.header-top')
 
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
+
+    <section class="shop-top">
+        <div class="container">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="/home">الرئيسية</a></li>
+                          <li class="breadcrumb-item"><a href="/shop"> تسوق</a></li>
+                          <li class="breadcrumb-item"><a> السلة</a></li>
+                        </ol>
+                      </nav>
+        </div>
+        </section>
+
 
 
     <div class="container">

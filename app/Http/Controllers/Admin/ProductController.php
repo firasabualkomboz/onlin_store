@@ -11,6 +11,7 @@ use App\Models\Cart;
 use Illuminate\Support\Str;
 use Cartalyst\Stripe\Laravel\Facades\Stripe;
 use Intervention\Image\Facades\Image;
+// use Stripe;
 class ProductController extends Controller
 
 {
@@ -55,11 +56,6 @@ class ProductController extends Controller
             ]);
 
             return redirect()->back();
-
-
-
-
-
         }
 
 
@@ -78,7 +74,7 @@ class ProductController extends Controller
             // dd($cart);
             session()->put('cart', $cart);
             // return redirect()->route('front.home')->with('success', 'تم اضافة المنتج الى السلة'); //false
-            return redirect()->route('home')->with('success', 'تم اضافة المنتج الى السلة'); //true
+            return redirect()->route('cart.show')->with('success', 'تم اضافة المنتج الى السلة'); //true
         }
 
         public function showCart() {

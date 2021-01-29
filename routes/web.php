@@ -56,3 +56,7 @@ Route::get('/order/{id}', 'HomeController@order')->name('front.Order');
 
 
 Route::post('/charge', 'Admin\ProductController@charge')->name('cart.charge');
+
+Route::get('/shop', 'HomeController@shop_product')->name('shop');
+
+Route::post('/home', 'CommentController@store')->name('comment');

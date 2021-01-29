@@ -3,13 +3,6 @@
 @section('content')
 
 
-    <!-- Page Preloder -->
-    {{-- <div id="preloder">
-        <div class="loader"></div>
-    </div>  --}}
-
-
-
     <!-- Breadcrumb Section Begin -->
     <section  class="breadcrumb-section set-bg" data-setbg="{{$product->photoone}}">
         <div class="container">
@@ -19,7 +12,8 @@
                         <h2>{{$product->name}}</h2>
                         <div  class="breadcrumb__option">
                             <a href="/home">الرئيسية</a>
-                            <a href="">القسم</a>
+                            <a href="/shop">تسوق</a>
+                            <a href="">{{$product->name}}</a>
                         </div>
                     </div>
                 </div>
@@ -38,58 +32,18 @@
                             <img class="product__details__pic__item--large"
                                 src="{{$product->photoone}}" alt="mm">
                         </div>
-                        <div class="product__details__pic__slider owl-carousel">
-                            <img data-imgbigurl="assets/fronts/img/product/details/product-details-2.jpg"
-                                src="assets/fronts/img/product/details/thumb-1.jpg" alt="">
-                            <img data-imgbigurl="assets/fronts/img/product/details/product-details-3.jpg"
-                                src="assets/fronts/img/product/details/thumb-2.jpg" alt="">
-                            <img data-imgbigurl="assets/fronts/img/product/details/product-details-5.jpg"
-                                src="assets/fronts/img/product/details/thumb-3.jpg" alt="">
-                            <img data-imgbigurl="assets/fronts/img/product/details/product-details-4.jpg"
-                                src="assets/fronts/img/product/details/thumb-4.jpg" alt="">
-                        </div>
+
                     </div>
                 </div>
                 <div dir="rtl" style="text-align: right" class="col-lg-6 col-md-6">
                     <div class="product__details__text">
                         <h3>{{$product->name}}</h3>
-                        <div class="product__details__rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>
-                            <span>( 18 زيارة)</span>
-                        </div>
-                        <div class="product__details__price">$50.00</div>
-                        <p>تفاصيل اكثر عن المنتج
-                            <br>
-                            تفاصيل
-                            <br>
-                            تفاصيل
-                            <br>
-                            تفاصيل
-                            <br>
-                            تفاصيل
+                        <div class="product__details__price">${{$product->price}}</div>
+                        <p>تفاصيل اكثر عن المنتج</p>
 
-                            .</p>
-                        <div class="product__details__quantity">
-                            <div class="quantity">
-                                <div class="pro-qty">
-                                    <input id="count" type="text" value="1">
-                                </div>
-                            </div>
-                        </div>
-                    <a href="" class="primary-btn"> أريد طلب هذا المنتج  </a>
+                    <a class="primary-btn" href="{{ route('cart.add',$product)}}">أضافة الى السلة</a>
 
                         <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
-
-                        <ul>
-                            <li><b>الحالة</b> <span>متوفر</span></li>
-                            <li><b>الشحن</b> <span>بعد ساعة من ارسال الطلب  <samp>2</samp></span></li>
-                            <li><b>تفاصيل اخرى </b> <span>--</span></li>
-
-                        </ul>
 
                     </div>
                 </div>
@@ -99,11 +53,6 @@
         </div>
     </section>
     <!-- Product Details Section End -->
-
-
-
-
-
 
     <!-- Related Product Section Begin -->
     <section dir="rtl" class="related-product">
@@ -116,6 +65,8 @@
                 </div>
             </div>
             <div class="row">
+
+
 
 
 

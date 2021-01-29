@@ -64,12 +64,12 @@
 <tr>
 
     <td> {{$product->name}} </td>
-    {{-- <td>{{$product->mainsection->name}} </td> --}}
+    {{-- <td>{{$product->categories->name}} </td> --}}
 {{-- <td> {{$mainsection->name}}</td> --}}
     <td> ؟؟ </td>
-
+    <td>//</td>
     <td> <img style="width: 100px" height="100px" src="{{$product->photoone}} " alt="">  </td>
-    <td> ؟؟ </td>
+    <td>{{$product->phototwo}}</td>
     <td>  {{$product->price }} $  </td>
     <td>
 

@@ -24,7 +24,7 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Request $request)
     {
         $products = Product::all();
 
@@ -33,6 +33,10 @@ class HomeController extends Controller
         $maincato = MainCategory::where('translation_of',0)->active()->get();
         $fastionproduct = Product::where('main_category_id',16)->get();
         $elcetonic = Product::where('main_category_id',10)->get();
+
+
+        $gift = Product::where('main_category_id',5)->get();
+        $hb = Product::where('main_category_id',3)->get();
         $mobile = Product::where('main_category_id',7)->get();
 
         $cuts = Product::where('price','<',50)->take(3)->get();
@@ -40,8 +44,13 @@ class HomeController extends Controller
         $buy = Product::where('price','>',50)->take(3)->get();
         $buy2 = Product::where('price','>',50)->take(3)->get();
 
+        $products = Product::when($request->search, function ($q) use ($request) {
+            return $q->whereTranslationLike('name', '%' . $request->search . '%');
+        })->latest()->paginate(5);
+
+
         return view('front.home',compact('maincato','products','fastionproduct','elcetonic','mobile','cuts','cuts2'
-        ,'buy','buy2'
+        ,'buy','buy2' , 'gift' ,'hb','products'
         ))
         ->with('topcato' , MainCategory::take(20)->get())
         ->with('lastproduct' , Product::orderBy('created_at','desc')->take(3)->get())
@@ -71,10 +80,31 @@ class HomeController extends Controller
  public function logout()
  {
     Auth::logout();
-
     return redirect()->route('home')->with(['success'=>' تمت عملية تسجيل الخروج ']);
+ } // end log out
+
+
+ public function shop_product(Request $request){
+
+     $categories = MainCategory::where('translation_of',0)->active()->get();
+     $products = Product::all();
+     $mightAlsoLike = Product::where('price', '!=', '80')->get();
+
+    return view('front.shop',compact('products'))->with(
+        [
+            'categories'=> $categories,
+            'mightAlsoLike' => $mightAlsoLike,
+        ]
+    );
  }
 
 
+//  public function serach(Request $request){
+//     $products = Product::when($request->search, function ($q) use ($request) {
+//         return $q->whereTranslationLike('name', '%' . $request->search . '%');
+//     })->latest()->paginate(5);
+
+//     return view('front.home', compact('products'));
+//  }
 
 }

@@ -5,7 +5,7 @@
                <div class="col-lg-3">
                 <div class="item-v1">
             <ol>
-                <li><img src="assets/fronts/img/logo.png" alt=""></li>
+                <li><h1>زاجل</h1></li>
             </ol>
                 </div>
                </div>
@@ -14,11 +14,8 @@
                 <div class="item-2-v1">
                <ol>
                 <li><i class="fa fa-home"></i></li>
-                   <li> من نحن </li>
-                   <li> خدماتنا</li>
-                   <li> الأقسام</li>
-                   <li> عملاءنا</li>
-                   <li> تواصل معنا </li>
+                <li><a href="{{route('shop')}}">تسوق الأن</a></li>
+                <li> من نحن </li>
                </ol>
                 </div>
              </div>

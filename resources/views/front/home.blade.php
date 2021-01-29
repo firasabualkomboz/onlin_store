@@ -4,11 +4,9 @@
 
 
     <!-- Page Preloder -->
-
-    {{-- <div id="preloder">
-        <div class="loader"></div>
-    </div> --}}
+    {{-- @include('front.include.loder') --}}
     @include('front.include.header-top')
+
     <!-- Hero Section Begin -->
 
     <section  class="hero">
@@ -35,27 +33,22 @@
                 </div>
 
                 <div class="col-lg-9">
-                    <div class="hero__search">
+                    {{-- <div class="hero__search">
                         <div class="hero__search__form">
-                            <form action="#">
-                                <div class="hero__search__categories">
-                                جميع الأقسام
-                                    <span class="arrow_carrot-down"></span>
-                                </div>
-
-                                <input type="text" placeholder=" ماذا تريد أن تبحث !؟">
+                            <form method="GET" action="front.home">
+                                <input name="search" type="search" value="{{request()->search}}" placeholder="@lang('auth.search')" aria-label="Search" >
                                 <button type="submit" class="site-btn">بحث عن منتج </button>
                             </form>
                         </div>
 
-                    </div>
+                    </div> --}}
 
                     <div style="direction: rtl"  class="hero__item set-bg" data-setbg="assets/fronts/img/headerimg.jpeg">
 
                         <div class="hero__text" >
                             <h2 style="color: #fff">زاجل  <br> غزة </h2>
                             <p style="margin-right: 20px">أنت تتسوق الأن داخل غزة</p>
-                            <a href="#" class="primary-btn">تسوق الأن</a>
+                            <a href="/shop " class="primary-btn">تسوق الأن</a>
                         </div>
 
 
@@ -186,97 +179,114 @@
         </div>
     </div>
     <!-- Banner End -->
-    <section id="helth" class="cat-product">
+    {{-- section product by category  --}}
+
+
+
+    <section class="featured spad">
         <div class="container">
-            <h2>صحة وجمال</h2>
-
             <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>أحدث المنتجات</h2>
+                    </div>
+                    <div class="featured__controls">
 
-                @foreach ($elcetonic as $elcetonicpro)
+<?php
+$types = ['all','fashone', 'electoronic','vegetables','sala','fastfood'];
+?>
 
-                <div class="col-lg-3">
-                    <div class="dad-product">
-                        <img class="featured__item__pic set-bg" src="{{$elcetonicpro->photoone}}" alt="">
-                        <h3>{{$elcetonicpro->name}}</h3>
-                        <p>{{$elcetonicpro->price}}</p>
-                        <div class="action-product">
-                            <ul class="list-unstyled">
-                                <li><a href="{{ route('cart.add',$elcetonicpro)}}"><i class="fa fa-shopping-cart"></i></a></li>
-                                <li><a href="{{ route('cart.add',$elcetonicpro)}}"><i class="fa fa-heart"></i></a></li>
-                                <li><a target="_blank" href="{{ route('front.details_product',[ 'id' => $elcetonicpro->id])}}"><i class="fa fa-eye"></i></a></li>
-                            </ul>
+<ul>
+
+@foreach ($types as $index=> $type)
+<li class="{{$index ==0 ? 'active' : ''}}">
+<a href="#{{$type}}" data-filter=".{{$type}}">@lang('auth.'.$type)</a></li>
+@endforeach
+
+
+</ul>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+<div class="row featured__filter">
+
+
+
+@foreach ($fastionproduct as $fashonepro)
+    <div class="col-lg-3 col-md-4 col-sm-6 mix fashone ">
+    <div class="featured__item">
+    <div class="featured__item__pic set-bg" data-setbg="{{$fashonepro->photoone}}">
+        <ul class="featured__item__pic__hover">
+            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+
+        <li><a href="{{route('front.details_product',[ 'id' => $fashonepro->id])}}"><i class="fa fa-eye"></i></a></li>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+        </ul>
+                        </div>
+                        <div class="featured__item__text">
+                        <h6><a href="#">{{$fashonepro->name}}</a></h6>
+                            <h5>$30.00</h5>
                         </div>
                     </div>
                 </div>
-
                 @endforeach
-            </div> <!-- end row  -->
-
-        </div> <!--  end container  -->
-    </section>
 
 
 
-    <section class="cat-product">
-        <div class="container">
-            <h2>الكترونيات</h2>
 
-            <div class="row">
-
-                @foreach ($elcetonic as $elcetonicpro)
-
-                <div class="col-lg-3">
-                    <div class="dad-product">
-                        <img class="featured__item__pic set-bg" src="{{$elcetonicpro->photoone}}" alt="">
-                        <h3>{{$elcetonicpro->name}}</h3>
-                        <p>{{$elcetonicpro->price}}</p>
-                        <div class="action-product">
-                            <ul class="list-unstyled">
-                                <li><a href="{{ route('cart.add',$elcetonicpro)}}"><i class="fa fa-shopping-cart"></i></a></li>
-                                <li><a href="{{ route('cart.add',$elcetonicpro)}}"><i class="fa fa-heart"></i></a></li>
-                                <li><a target="_blank" href="{{ route('front.details_product',[ 'id' => $elcetonicpro->id])}}"><i class="fa fa-eye"></i></a></li>
-                            </ul>
-                        </div>
+@foreach ($elcetonic as $elcetonicpro)
+<div class="col-lg-3 col-md-4 col-sm-6 mix electoronic ">
+<div class="featured__item">
+<div class="featured__item__pic set-bg" data-setbg="{{$elcetonicpro->photoone}}">
+    <ul class="featured__item__pic__hover">
+        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+        <li><a href="{{route('front.details_product',[ 'id' => $elcetonicpro->id])}}"><i class="fa fa-eye"></i></a></li>
+    <li><a href="{{ route('cart.add',$elcetonicpro)}}"><i class="fa fa-shopping-cart"></i></a></li>
+    </ul>
+                    </div>
+                    <div class="featured__item__text">
+                    <h6><a href="#">{{$elcetonicpro->name}}</a></h6>
+                        <h5>$30.00</h5>
                     </div>
                 </div>
-
-                @endforeach
-            </div> <!-- end row  -->
-
-        </div> <!--  end container  -->
-    </section>
+            </div>
 
 
-    <section class="cat-product">
-        <div class="container">
-            <h2> موضة وأزياء</h2>
+            @endforeach
 
-            <div class="row">
 
-                @foreach ($fastionproduct  as $fashon)
 
-                <div class="col-lg-3">
-                    <div class="dad-product">
-                        <img class="featured__item__pic set-bg" src="{{$fashon->photoone}}" alt="">
-                        <h3>{{$fashon->name}}</h3>
-                        <p>{{$fashon->price}}</p>
-                        <div class="action-product">
-                            <ul class="list-unstyled">
-                                <li><a href="{{ route('cart.add',$fashon)}}"><i class="fa fa-shopping-cart"></i></a></li>
-                                <li><a href="{{ route('cart.add',$fashon)}}"><i class="fa fa-heart"></i></a></li>
-                                <li><a target="_blank" href="{{ route('front.details_product',[ 'id' => $fashon->id])}}"><i class="fa fa-eye"></i></a></li>
-                            </ul>
-                        </div>
+
+@foreach ($mobile as $mobilepro)
+<div class="col-lg-3 col-md-4 col-sm-6 mix mobile ">
+<div class="featured__item">
+<div class="featured__item__pic set-bg" data-setbg="{{$mobilepro->photoone}}">
+    <ul class="featured__item__pic__hover">
+        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+        <li><a href="{{route('front.details_product',[ 'id' => $mobilepro->id])}}"><i class="fa fa-eye"></i></a></li>
+        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+    </ul>
+                    </div>
+                    <div class="featured__item__text">
+                    <h6><a href="#">{{$mobilepro->name}}</a></h6>
+                        <h5>$30.00</h5>
                     </div>
                 </div>
+            </div>
 
-                @endforeach
-            </div> <!-- end row  -->
 
-        </div> <!--  end container  -->
+            @endforeach
+
+
+            </div>
+            <a class="primary-btn all-product" href="/shop">جميع المنتجات </a>
+        </div>
     </section>
-
-
 
 
 
