@@ -6,6 +6,7 @@ use App\Models\Product;
 use Illuminate\Http\Request;
 use App\Models\MainCategory;
 use Illuminate\Support\Facades\Auth;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class HomeController extends Controller
 {
@@ -66,11 +67,8 @@ class HomeController extends Controller
         ->with('productref',Product::where('main_category_id',7)->take(4)->get())
         ->with('maincato',MainCategory::where('translation_of',0)->active()->get())
         // ->with('fastionproduct',Product::where('main_category_id',16)->get())
-
         ;
-
     }
-
 
     public function authroute(){
         return "page not found ";
@@ -85,6 +83,12 @@ class HomeController extends Controller
 
 
  public function shop_product(Request $request){
+
+     Alert::success('Success Title', 'Success Message');
+
+        if(session('success')){
+            toast(session('success'),'success');
+        }
 
      $categories = MainCategory::where('translation_of',0)->active()->get();
      $products = Product::all();

@@ -1,8 +1,6 @@
 @extends('layouts.bodyfront')
 
 @section('content')
-
-
     <!-- Breadcrumb Section Begin -->
     <section  class="breadcrumb-section set-bg" data-setbg="{{$product->photoone}}">
         <div class="container">
@@ -66,10 +64,6 @@
             </div>
             <div class="row">
 
-
-
-
-
 {{-- @foreach ($productref as $productrefe)
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product__item">
@@ -89,21 +83,10 @@
 @endforeach --}}
 
 
-
-
-
-
             </div>
         </div>
     </section>
     <!-- Related Product Section End -->
 
-
-
-
-
-</body>
-
-</html>
 
 @endsection

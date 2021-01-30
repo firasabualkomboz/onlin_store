@@ -13,7 +13,7 @@
                <div class="col-lg-6">
                 <div class="item-2-v1">
                <ol>
-                <li><i class="fa fa-home"></i></li>
+                <li><a href="/home"><i class="fa fa-home"></i></a></li>
                 <li><a href="{{route('shop')}}">تسوق الأن</a></li>
                 <li> من نحن </li>
                </ol>

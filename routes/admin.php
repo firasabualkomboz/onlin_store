@@ -28,7 +28,6 @@ Route::group(['namespace'=>'Admin' ,  'middleware' => 'auth:admin'], function ()
 // ************************************ main categories ************************************
     Route::group(['prefix' => 'main_categories'], function () {
 
-
         Route::get('/', 'MainCategoriesController@index')->name('admin.maincategories');
         Route::get('create', 'MainCategoriesController@create')->name('admin.maincategories.create');
         //حفظ اللعة واضافتها
@@ -38,9 +37,7 @@ Route::group(['namespace'=>'Admin' ,  'middleware' => 'auth:admin'], function ()
         Route::get('delete/{id}', 'MainCategoriesController@destroy')->name('admin.maincategories.delete');
         Route::get('changeStatus/{id}', 'MainCategoriesController@changeStatus')->name('admin.maincategories.status');
 
-
     });
-
 // ************************************ end  main categories ************************************
 
 
@@ -55,15 +52,12 @@ Route::group(['prefix' => 'Sub_categories'], function () {
     // Route::post('update/{id}', 'SectionController@update')->name('admin.subCategoriesController.update');
     // Route::get('delete/{id}', 'SectionController@destroy')->name('admin.subCategoriesController.delete');
     // Route::get('changeStatus/{id}', 'SectionController@changeStatus')->name('admin.subCategoriesController.status');
-
-
 });
 
 // ************************************ end  Sub_categories ************************************
 
 // ************************************ product  ************************************
 Route::group(['prefix' => 'product'], function () {
-
 
     Route::get('/', 'ProductController@index')->name('admin.product');
     Route::get('create', 'ProductController@create')->name('admin.product.create');
@@ -84,25 +78,18 @@ Route::group(['prefix' => 'product'], function () {
 
 // ************************************ end  product  ************************************
 
+
 // ************************************ permission  ************************************
-
-
-
 
 Route::group(['prefix' => 'permission'], function () {
 
     Route::get('/', 'PermissionController@index')->name('admin.permission');
     Route::get('create', 'PermissionController@create')->name('admin.permission.create');
-
-
 });
-
-
 
 
 // ************************************ vendors ************************************
 Route::group(['prefix' => 'vendors'], function () {
-
 
     Route::get('/', 'VendorsController@index')->name('admin.vendors');
     Route::get('create', 'VendorsController@create')->name('admin.vendors.create');
@@ -121,7 +108,6 @@ Route::group(['prefix' => 'vendors'], function () {
 
 
 // *********
-
 Route::group(['namespace' => 'Admin', 'middleware' => 'guest:admin'], function () {
 
     Route::get('login', 'LoginController@getLogin')->name('get.admin.login');
@@ -129,9 +115,8 @@ Route::group(['namespace' => 'Admin', 'middleware' => 'guest:admin'], function (
 
 });
 
-
 // Route::get('tester', function () {
-
-//     return feras();
-
+//
+//     return 'feras';
+//
 // });

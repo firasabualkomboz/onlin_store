@@ -244,3 +244,10 @@ footer{
 .all-product{
  margin-left: 500px;
 }
+
+.hero__search__form {
+    float: right;
+}
+.hero__search__form form input {
+    text-align: right;
+}

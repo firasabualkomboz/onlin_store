@@ -33,16 +33,6 @@
                 </div>
 
                 <div class="col-lg-9">
-                    {{-- <div class="hero__search">
-                        <div class="hero__search__form">
-                            <form method="GET" action="front.home">
-                                <input name="search" type="search" value="{{request()->search}}" placeholder="@lang('auth.search')" aria-label="Search" >
-                                <button type="submit" class="site-btn">بحث عن منتج </button>
-                            </form>
-                        </div>
-
-                    </div> --}}
-
                     <div style="direction: rtl"  class="hero__item set-bg" data-setbg="assets/fronts/img/headerimg.jpeg">
 
                         <div class="hero__text" >
@@ -54,8 +44,6 @@
 
                     </div>
                 </div>
-
-
 
 
             </div>
@@ -74,7 +62,7 @@
 
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="{{$cato->photo}}">
-                            <h5><a href="#">{{$cato->name}}</a></h5>
+                            <h5><a >{{$cato->name}}</a></h5>
                         </div>
                     </div>
 

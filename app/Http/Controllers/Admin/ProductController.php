@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Models\Order;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Product;
 use App\Models\Section;
 use App\Models\MainCategory;
 use App\Models\Cart;
-use Illuminate\Support\Str;
 use Cartalyst\Stripe\Laravel\Facades\Stripe;
-use Intervention\Image\Facades\Image;
+
+
 // use Stripe;
 class ProductController extends Controller
 
@@ -62,19 +63,16 @@ class ProductController extends Controller
 
         public function addToCart(Product $product) {
 
-
             if (session()->has('cart')) {
                 $cart = new Cart(session()->get('cart'));
-
             } else {
                 $cart = new Cart();
             }
-
             $cart->add($product);
             // dd($cart);
             session()->put('cart', $cart);
             // return redirect()->route('front.home')->with('success', 'تم اضافة المنتج الى السلة'); //false
-            return redirect()->route('cart.show')->with('success', 'تم اضافة المنتج الى السلة'); //true
+           return redirect()->route('cart.show')->with('success', 'تم اضافة المنتج الى السلة'); //true
         }
 
         public function showCart() {
@@ -95,6 +93,36 @@ class ProductController extends Controller
 
     }
 
+    public function charge(Request $request)
+    {
+
+        $charge = Stripe::charges()->create([
+            'currency' => 'USD',
+            'source' => $request->stripeToken,
+            'amount' => $request->amount,
+            'description' => ' Test from laravel new app'
+        ]);
+
+        $chargeId = $charge['id'];
+
+        $orders = new Order();
+        if ($chargeId) {
+            // save order in orders table ...
+
+            auth()->user()->orders()->create([
+                'cart' => serialize( session()->get('cart'))
+            ]);
+
+
+            // clearn cart
+            session()->forget('cart');
+            return redirect()->route('shop')->with('success', " Payment was done. Thanks");
+        } else {
+            return redirect()->back();
+        }
+
+
+    }
     // public function charge(Request $request) {
 
     //     //dd($request->stripeToken);
@@ -119,41 +147,7 @@ class ProductController extends Controller
     // }
 
 
-public function charge(Request $request) {
-
-    //dd($request->stripeToken);
-
-    $charge = Stripe::charges()->create([
-        'currency' => 'USD',
-        'source' => $request->stripeToken,
-        'amount'   => $request->amount,
-        'description' => ' Test from laravel new app'
-    ]);
-
-    $chargeId = $charge['id'];
-
-    if ($chargeId) {
-
-        // clearn cart
-          // save order in orders table ...
-
-          auth()->user()->orders()->create([
-            'cart' => serialize( session()->get('cart'))
-        ]);
-        // clearn cart
-
-
-        session()->forget('cart');
-        return redirect()->route('store')->with('success', " Payment was done. Thanks");
-    } else {
-        return redirect()->back();
-    }
-}
-
-
     public function destroy($id){
-
-
         try {
 
             $product = Product::find($id);

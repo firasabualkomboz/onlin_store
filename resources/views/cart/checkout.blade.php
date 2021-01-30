@@ -53,6 +53,7 @@
                 </div>
 
                 <button class="btn btn-primary mt-3">Submit Payment</button>
+                <p id="loading" style="display: none" >Payment is in process , please wait </p>
             </form>
         </div>
     </div>
@@ -117,101 +118,13 @@
                 hiddenInput.setAttribute('value', token.id);
                 form.appendChild(hiddenInput);
                 // Submit the form
+                var loading = document.getElementById('loading')
+                loading.style.display = "block";
+
                 form.submit();
             }
         }
 </script>
-
-
-
-
-
-<section>
-
-    <div dir="rtl" style="text-align: right"   class="col-lg-12">
-        <div class="product__details__tab">
-            <ul style="text-align: right" class="nav nav-tabs" role="tablist">
-
-                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"
-                aria-selected="true">تفاصيل الشراء</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab"aria-selected="false">حالة الطلب </a>
-                </li>
-
-            </ul>
-
-            <div id="addcart" class="tab-content">
-                <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                    <div class="product__details__tab__desc">
-                        <h6>التوصيل</h6>
-
-                            <form>
-
-                                <div class="row data-cart">
-                                    <div class="col-lg-4">
-                                        <input type="text" class="form-control" placeholder="الاسم الأول ">
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <input type="text" class="form-control" placeholder="اسم العائلة ">
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <input type="text" class="form-control" placeholder="الدولة ">
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <input type="text" class="form-control" placeholder="المدينة">
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <input type="text" class="form-control" placeholder="العنوان بالتفصيل ">
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <input type="text" class="form-control" placeholder="تفاصيل اكثر للعنوان">
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <input type="text" class="form-control" placeholder="رقم جوال ">
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <input type="text" class="form-control" placeholder="رقم جوال اخر">
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <input type="text" class="form-control" placeholder="البريد الإلكتروني  ">
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <input type="text" class="form-control" placeholder="ملاحظات للطلب">
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <button class="btn btn-primary">إرسال المعلومات </button>
-                                    </div>
-                                </div>
-
-                              </form>
-
-
-                    </div>
-                </div>
-                <div class="tab-pane" id="tabs-2" role="tabpanel">
-                    <div class="product__details__tab__desc">
-                        <h6>تفاصيل عن طلب الزبون </h6>
-
-                        <p>
-                            <div class="alert alert-primary" role="alert">
-             لا يوجد اي رسالة بعد
-                              </div>
-
-                          </p>
-                    </div>
-                </div>
-
-
-
-
-
-
-            </div>
-        </div>
-    </div>
-</section>
 
 
 @endsection

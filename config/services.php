@@ -36,8 +36,7 @@ return [
 
 
     'stripe' => [
-        'secret' => '
-        sk_test_51HcbQsEtwbKtbCp5rlBE3xoQe4XkxUb6K1kKY0yK4k9W9YpJK8XflE96rkoFdVtQFgRnrbNDI163nyEcKnbWui6z00LCtVHKcs',
+        'secret' => 'sk_test_51HcbQsEtwbKtbCp5rlBE3xoQe4XkxUb6K1kKY0yK4k9W9YpJK8XflE96rkoFdVtQFgRnrbNDI163nyEcKnbWui6z00LCtVHKcs',
     ],
 
 ];

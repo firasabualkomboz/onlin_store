@@ -13,7 +13,22 @@
                   <li class="breadcrumb-item"><a> تسوق</a></li>
                 </ol>
               </nav>
+
+    <div class="hero__search">
+        <div class="hero__search__form">
+            <form method="GET" action="front.home">
+                <input name="search" type="search" value="{{request()->search}}" placeholder="@lang('auth.search')" aria-label="Search" >
+                <button type="submit" class="site-btn">بحث عن منتج </button>
+            </form>
+        </div>
+
+    </div>
+
+
 </div>
+
+
+
 </section>
 
 
