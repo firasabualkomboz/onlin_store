@@ -29,8 +29,6 @@ class HomeController extends Controller
     {
         $products = Product::all();
 
-
-
         $maincato = MainCategory::where('translation_of',0)->active()->get();
         $fastionproduct = Product::where('main_category_id',16)->get();
         $elcetonic = Product::where('main_category_id',10)->get();
@@ -70,6 +68,34 @@ class HomeController extends Controller
         ;
     }
 
+    function shop_by_category($id){
+
+        $categories = MainCategory::where('translation_of',0)->active()->get();
+
+        if (request()->category) {
+            $products = Product::with('categories')->whereHas('categories', function ($query) {
+                $query->where('id', request()->category);
+            });
+
+        } else {
+            $products = Product::where('featured', true);
+
+        }
+
+
+
+        $category = MainCategory::find($id);
+        $product = Product::where('id','$id')->findOrFail($id);
+
+        return view('front.category_Shop')->with([
+            'category'=>$category,
+            'product'=>$product,
+        ])
+
+        ->with('categories',MainCategory::where('translation_of',0)->active()->get())
+        ;
+    }
+
     public function authroute(){
         return "page not found ";
     }
@@ -84,7 +110,7 @@ class HomeController extends Controller
 
  public function shop_product(Request $request){
 
-     Alert::success('Success Title', 'Success Message');
+
 
         if(session('success')){
             toast(session('success'),'success');
@@ -103,12 +129,5 @@ class HomeController extends Controller
  }
 
 
-//  public function serach(Request $request){
-//     $products = Product::when($request->search, function ($q) use ($request) {
-//         return $q->whereTranslationLike('name', '%' . $request->search . '%');
-//     })->latest()->paginate(5);
-
-//     return view('front.home', compact('products'));
-//  }
 
 }

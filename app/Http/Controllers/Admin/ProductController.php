@@ -73,7 +73,9 @@ class ProductController extends Controller
             session()->put('cart', $cart);
             // return redirect()->route('front.home')->with('success', 'تم اضافة المنتج الى السلة'); //false
            return redirect()->route('cart.show')->with('success', 'تم اضافة المنتج الى السلة'); //true
-        }
+
+        }//end add to cart product
+
 
         public function showCart() {
 
@@ -90,8 +92,7 @@ class ProductController extends Controller
 
             return view('cart.checkout',compact('amount'));
             // return $amount;
-
-    }
+        }
 
     public function charge(Request $request)
     {
@@ -105,14 +106,11 @@ class ProductController extends Controller
 
         $chargeId = $charge['id'];
 
-        $orders = new Order();
         if ($chargeId) {
             // save order in orders table ...
-
             auth()->user()->orders()->create([
                 'cart' => serialize( session()->get('cart'))
             ]);
-
 
             // clearn cart
             session()->forget('cart');
@@ -123,29 +121,6 @@ class ProductController extends Controller
 
 
     }
-    // public function charge(Request $request) {
-
-    //     //dd($request->stripeToken);
-    //     $charge = Stripe::charges()->create([
-    //         'currency' => 'USD',
-    //         'source' => $request->stripeToken,
-    //         'amount'   => $request->amount,
-    //         'description' => ' Test from laravel new app'
-    //     ]);
-
-    //     $chargeId = $charge['id'];
-
-    //     if ($chargeId) {
-    //         // save order in orders table ...
-    //         // clearn cart
-
-    //         session()->forget('cart');
-    //         return redirect()->route('store')->with('success', " Payment was done. Thanks");
-    //     } else {
-    //         return redirect()->back();
-    //     }
-    // }
-
 
     public function destroy($id){
         try {

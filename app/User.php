@@ -35,7 +35,8 @@ class User extends Authenticatable
         return $this -> belongsToMany(Comment::class);
       }
 
-      public function orders(){
-        return $this->hasMany(Order::Class);
-      }
+
+    public function orders() {
+        return $this->hasMany('App\Models\Order');
+    }
 }

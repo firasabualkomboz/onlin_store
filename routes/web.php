@@ -16,7 +16,7 @@
 // });
 
 //->middleware('verified')
-
+use Illuminate\Support\Facades\Input;
 Auth::routes();
 Auth::routes(['verify' => true]);
 
@@ -47,7 +47,7 @@ Route::get('/logout', 'HomeController@logout')->name('home');
 
 
 Route::get('/Product-details/{id}', 'HomeController@Productdetails')->name('front.details_product');
-
+Route::get('/category_shop/{id}','HomeController@shop_by_category')->name('front.category_shop');
 Route::get('/order/{id}', 'HomeController@order')->name('front.Order');
 // Route::get('/addToCart/{product}', 'ProductController@addToCart')->name('front.add');
 // Route::get('/addToCart/{product}', 'ProductController@addToCart')->name('cart.add');
@@ -59,4 +59,23 @@ Route::post('/charge', 'Admin\ProductController@charge')->name('cart.charge');
 
 Route::get('/shop', 'HomeController@shop_product')->name('shop');
 
-Route::post('/home', 'CommentController@store')->name('comment');
+//---------------------------------- route search product  ----------------------------------//
+Route::any('/search',function(){
+    $categories  = \App\Models\MainCategory::where('translation_of',0)->active()->get();
+    $products   = \App\Models\Product::all();
+    $q = Input::get ( 'q' );
+    $product = \App\Models\Product::where('name','LIKE','%'.$q.'%')
+    ->orWhere('price','LIKE','%'.$q.'%')->get();
+    if(count($product) > 0)
+        return view('front.search_result',compact('categories','products'))->withDetails($product)->withQuery ( $q );
+
+       else
+
+       return view ('errors.404',compact('categories','products'))->with('msg','يبدو انه لم يتم العثور على نتائج حاول البحث مرة أخرى ');
+});
+//---------------------------------- route search product  ----------------------------------//
+
+//---------------------------------- route send email ----------------------------------//
+route::get('/sendemail','SendEmailController@index');
+route::post('/sendemail/send','SendEmailController@send');
+//---------------------------------- end send email ----------------------------------//

@@ -49,12 +49,13 @@
                                         <thead>
                                         <tr>
                                             <th>اسم المنتج </th>
-                                            <th>  القسم الرئيسي  </th>
-                                            <th>  القسم الفرعي  </th>
-                                             <th>صورة المنتج (1) </th>
-                                             <th>صورة المنتج (2) </th>
-                                             <th>سعر المنتج </th>
+                                            <th>القسم الرئيسي</th>
+                                            <th>القسم الفرعي</th>
+                                            <th>صورة المنتج (1)</th>
+                                            <th>صورة المنتج (2) </th>
+                                            <th>سعر المنتج </th>
                                             <th>الإجراءات</th>
+
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -64,9 +65,10 @@
 <tr>
 
     <td> {{$product->name}} </td>
-    {{-- <td>{{$product->categories->name}} </td> --}}
+    <td>{{$product->id}}</td>
+
 {{-- <td> {{$mainsection->name}}</td> --}}
-    <td> ؟؟ </td>
+
     <td>//</td>
     <td> <img style="width: 100px" height="100px" src="{{$product->photoone}} " alt="">  </td>
     <td>{{$product->phototwo}}</td>

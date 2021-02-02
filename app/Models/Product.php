@@ -8,6 +8,7 @@ class Product extends Model
 {
     protected $table = 'product';
 
+
     protected $fillable = [
         'name', 'photoone', 'phototwo', 'price', 'main_category_id' , 'sub_section_id', 'created_at', 'updated_at'
     ];
@@ -15,8 +16,6 @@ class Product extends Model
     public function maincategoryproduct(){
         return $this -> belongsTo(MainCategory::class,'sub_category_id','id');
       }
-
-
 
     public function scopeSelection($query)
     {
@@ -27,5 +26,7 @@ class Product extends Model
       {
           return asset($photoone);
       }
+
+
 
 }

@@ -18,6 +18,12 @@
         </section>
 
 
+@if( session()->has('success'))
+ <div class="container">
+     <div class="alert alert-success">{{ session()->get('success') }}</div>
+ </div>
+@endif
+
 
     <div class="container">
         <div style="margin-top: 100px" class="row">

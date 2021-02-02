@@ -251,3 +251,24 @@ footer{
 .hero__search__form form input {
     text-align: right;
 }
+/* send_email_form */
+.send_email_form{
+    margin-top: 10%;
+}
+.category_a{
+    color: #7a7a7a;
+    font-size: 18px;
+    font-weight: 500;
+}
+.category_a :hover{
+    color: #7a7a7a;
+    font-size: 18px;
+    font-weight: 500;
+}
+.category_li :hover{
+    color: #7fad39;
+    margin: 2px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .5s, height .3s;
+}
