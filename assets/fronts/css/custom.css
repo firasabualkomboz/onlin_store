@@ -272,3 +272,87 @@ footer{
     font-weight: 600;
     transition: all .5s, height .3s;
 }
+
+/* style auth user pages */
+.card-header {
+    background-color: #7FAD39;
+    text-align: right;
+    color: #fff;
+}
+.card-body{
+    direction: rtl;
+    text-align: right;
+}
+
+/*page order*/
+
+.order-tbl table{
+    direction: rtl;
+    text-align: right;
+}
+.btn-add-fav{
+    background-color: #fff;
+    border: #fff;
+}
+
+
+/* shop=product */
+.shop-product{
+    direction: rtl;
+}
+.shop-product .category-list ol {
+    text-align: right;
+}
+.shop-product .category-list ol li {
+    display: inline-block;
+    margin: 10px;
+}
+.shop-product .card-shop-product{
+    box-shadow: 0 35px 50px -30px rgba(0, 0, 0, 100%);
+    /*margin: 10px;*/
+    padding: 10px;
+    direction: rtl;
+    margin-top: 20%;
+}
+.shop-product .card-shop-product img{
+    width: 100%;
+}
+.shop-product .card-shop-product img:hover{
+    transform: scale(1.2);
+    transition: all .5s .5s;
+    cursor: grab;
+
+}
+.shop-product .data-product{
+    margin-top: 10%;
+    text-align: right;
+}
+
+.shop-product .card-shop-product .data-product ol{
+    display: inline-block;
+}
+.shop-product .card-shop-product .data-product ol li a{
+    font-size: 15px;
+    color: #999;
+    line-height: 1.4;
+    text-decoration: none;
+}
+.shop-product .card-shop-product .data-product ol li a:hover{
+    color: #7FAD39;
+    font-weight: bold;
+}
+/*.shop-product .card-shop-product span{*/
+/*    font-size: 14px;*/
+/*    color: #666;*/
+/*    line-height: 1.4;*/
+/*    letter-spacing: 1px;*/
+/*}*/
+
+.shop-product .card-shop-product a{
+    float: left;
+    color: #999;
+}
+.shop-product .card-shop-product a:hover{
+    color: #7FAD39;
+}
+

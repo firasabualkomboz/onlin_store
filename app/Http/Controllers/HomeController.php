@@ -6,11 +6,13 @@ use App\Models\Product;
 use Illuminate\Http\Request;
 use App\Models\MainCategory;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use App\Models\UserProductFavorite;
 use RealRashid\SweetAlert\Facades\Alert;
 
 class HomeController extends Controller
 {
-    /**
+    /**order
      * Create a new controller instance.
      *
      * @return void
@@ -68,33 +70,16 @@ class HomeController extends Controller
         ;
     }
 
-    function shop_by_category($id){
+    function shop_by_category(Request $request , $id){
 
-        $categories = MainCategory::where('translation_of',0)->active()->get();
+     $categories = MainCategory::with('products')->findOrFail($id);
 
-        if (request()->category) {
-            $products = Product::with('categories')->whereHas('categories', function ($query) {
-                $query->where('id', request()->category);
-            });
+     return view('front.category_shop',compact('categories'))
+     ->with('all_category',MainCategory::where('translation_of',0)->active()->get())
+     ;
 
-        } else {
-            $products = Product::where('featured', true);
-
-        }
-
-
-
-        $category = MainCategory::find($id);
-        $product = Product::where('id','$id')->findOrFail($id);
-
-        return view('front.category_Shop')->with([
-            'category'=>$category,
-            'product'=>$product,
-        ])
-
-        ->with('categories',MainCategory::where('translation_of',0)->active()->get())
-        ;
     }
+
 
     public function authroute(){
         return "page not found ";
@@ -109,8 +94,6 @@ class HomeController extends Controller
 
 
  public function shop_product(Request $request){
-
-
 
         if(session('success')){
             toast(session('success'),'success');

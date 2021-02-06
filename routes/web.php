@@ -48,7 +48,10 @@ Route::get('/logout', 'HomeController@logout')->name('home');
 
 Route::get('/Product-details/{id}', 'HomeController@Productdetails')->name('front.details_product');
 Route::get('/category_shop/{id}','HomeController@shop_by_category')->name('front.category_shop');
-Route::get('/order/{id}', 'HomeController@order')->name('front.Order');
+Route::get('/favorite','FavoriteController@show_favorite_product')->name('front.favorite');
+Route::post('/favorite/addfovorite','FavoriteController@store_favorite_product')->name('addfavorite');
+//Route::get('/order/{id}', 'HomeController@order')->name('front.Order');
+Route::get('/orders', 'Admin\OrderController@index')->name('front.order');
 // Route::get('/addToCart/{product}', 'ProductController@addToCart')->name('front.add');
 // Route::get('/addToCart/{product}', 'ProductController@addToCart')->name('cart.add');
 

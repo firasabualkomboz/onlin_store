@@ -26,6 +26,9 @@ class Product extends Model
       {
           return asset($photoone);
       }
+    public function favorite_list(){
+        return $this->hasMany(UserProductFavorite::class);
+    }
 
 
 

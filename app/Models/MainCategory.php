@@ -68,8 +68,12 @@ class MainCategory extends Model
 
       public function product(){
         return $this -> hasMany(Product::class,'sub_category_id','id');
-
       }
+
+      public function products(){
+        return $this ->hasMany(Product::class);
+      }
+
 
 
 

@@ -51,19 +51,16 @@
                             </div>
                         </div>
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('تسجيل الدخول') }}
-                                </button>
+    <div class="form-group row mb-0">
 
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('هل نسيت كلمة المرور ؟ ') }}
-                                    </a>
-                                @endif
-                            </div>
-                        </div>
+        <div class="col-md-8 offset-md-4">
+            <button type="submit" class="site-btn"> {{ __('تسجيل الدخول') }} </button>
+            @if (Route::has('password.request'))<a class="btn btn-link" href="{{ route('password.request') }}">{{ __('هل نسيت كلمة المرور ؟ ') }}</a>
+            @endif
+        </div>
+
+    </div>
+
                     </form>
                 </div>
             </div>

@@ -2,12 +2,12 @@
 
 @section('content')
 
-
-
     {{-- @include('front.include.loder') --}}
     @include('front.include.header-top')
 
+
     <!-- Hero Section Begin -->
+
 
     <section  class="hero">
         <div class="container">
@@ -25,7 +25,7 @@
                         ?>
                         <ul>
                             @foreach ($maincato as $topcato)
-                            <li><a  href="#">{{$topcato->name}}</a></li>
+                            <li><a  href="">{{$topcato->name}}</a></li>
                             @endforeach
 
                         </ul>
@@ -210,7 +210,21 @@ $types = ['all','fashone', 'electoronic','vegetables','sala','fastfood'];
     <div class="featured__item">
     <div class="featured__item__pic set-bg" data-setbg="{{$fashonepro->photoone}}">
         <ul class="featured__item__pic__hover">
-            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+
+            <?php
+//            $favoritelist=\Illuminate\Support\Facades\DB::table('favorite')->rightJoin('product','favorite.product_id','=','product.id')
+//                ->where('favorite.product_id','=',$product->id)->get();
+//            $count=\App\Models\UserProductFavorite::where(['product_id'=>$product->id])->count();
+            ?>
+{{--                @if($count=="0")--}}
+{{--                    <form action="{{route('addfavorite')}}" method="post" role="form">--}}
+{{--                        <input type="hidden" name="_token" value="{{csrf_token()}}">--}}
+{{--                        <input type="hidden" value="{{$product->id}}" name="product_id">--}}
+{{--                        <button type="submit" class="site-btn"><li><a ><i class="fa fa-heart"></i></a></li></button>--}}
+{{--                    </form>--}}
+{{--                @else--}}
+{{--                    <li><a disabled=""><i class="fa fa-heart"></i></a></li>--}}
+{{--                @endif--}}
 
         <li><a href="{{route('front.details_product',[ 'id' => $fashonepro->id])}}"><i class="fa fa-eye"></i></a></li>
             <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>

@@ -3,6 +3,7 @@
 namespace App;
 
 use App\Models\Order;
+use App\Models\UserProductFavorite;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Notifications\userlogin;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -38,5 +39,9 @@ class User extends Authenticatable
 
     public function orders() {
         return $this->hasMany('App\Models\Order');
+    }
+
+    public function favorite_list(){
+        return $this->hasMany(UserProductFavorite::class);
     }
 }

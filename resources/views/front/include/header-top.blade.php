@@ -24,7 +24,12 @@
              <div class="col-lg-3">
                 <div class="item-3-v1">
                <ol>
-                <li><a><i class="fa fa-heart"></i><span>1</span></a></li>
+
+                   @if (Auth::check())
+                   <li><a target="_blank" class="cart" href="{{route('front.order')}}"><i class="fa fa-shopping-cart"></i><span>{{\App\Models\Order::count()}}</span></a></li>
+                   @endif
+
+                   <li><a target="_blank" class="cart" href="{{route('front.favorite')}}"><i class="fa fa-heart"></i><span>{{\App\Models\UserProductFavorite::count()}}</span></a></li>
 
                 <li><a class="cart" href="{{route('cart.show')}}">
                 <i class="fa fa-shopping-bag"></i>

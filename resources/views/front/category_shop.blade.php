@@ -9,7 +9,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/home">@lang('auth.home')</a></li>
                     <li class="breadcrumb-item"><a href="/shop"> @lang('auth.shop')</a></li>
-                    <li class="breadcrumb-item"><a>{{$category->name}}</a></li>
+                    <li class="breadcrumb-item active"><a>{{$categories->name}}</a></li>
                 </ol>
             </nav>
 
@@ -42,27 +42,33 @@
                     <div class="list-product">
                         <ol class="list-unstyled">
 
-                            @foreach ($categories as $category)
-                                <li>{{$category->name}}</li>
+                            @foreach ($all_category as $category)
+                                <li class="category_li"><a class="category_a" target="_blank" href="{{route('front.category_shop',[ 'category' => $category->id])}}">{{$category->name}}</a></li>
                             @endforeach
                         </ol>
                     </div>
                 </div>
                 <div class="col-lg-9">
-                    <h2>{{$category->name}}</h2>
+                    <h2>{{$categories->name}}</h2>
 
                     <div class="row">
-                      @foreach ($product as $product)
-                            <div class="col-lg-4">
 
-                                <div class="product">
-                                    <img style="width: 50%" src="{{$product->photoone}}" alt="">
-                                    <h3><a href="{{ route('front.details_product',[ 'id' => $product->id])}}">{{$product->name}}</a></h3>
-                                    <span>{{$product->price}}</span>
-                                </div>
+                        @if($categories->products->count())
+                            @foreach($categories->products as  $product)
 
+                        <div class="col-lg-4">
+
+                            <div class="product">
+                                <img style="width: 50%" src="{{$product->photoone}}" title="{{$product->name}}" alt="">
+                                <h3><a href="{{ route('front.details_product',[ 'id' => $product->id])}}">{{$product->name}}</a></h3>
+                                <span>{{$product->price}}</span>
                             </div>
-                      @endforeach
+
+                        </div>
+
+                            @endforeach
+                        @endif
+
                     </div>
 
 

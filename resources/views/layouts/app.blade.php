@@ -20,6 +20,13 @@
 
     <!-- Styles -->
     <link href="{{ asset('public/css/app.css') }}" rel="stylesheet">
+    {{-- get style fronts template     --}}
+
+<!-- Css Styles -->
+    <link rel="stylesheet" href="{{asset('assets/fronts/css/bootstrap.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('assets/fronts/css/font-awesome.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('assets/fronts/css/style.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('assets/fronts/css/custom.css')}}" type="text/css">
 
     @yield('style')
 </head>
