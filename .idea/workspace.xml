@@ -11,34 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84aadbb5-4dc2-400d-8473-c631e1fb6a81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FavoriteController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/UserProductFavorite.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fronts/img/banner/pexels-photo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/favorite.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/product/1612602655404-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/product/1612602736404-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/product/1612602751404-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/product/1612620547Capture.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/MainCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/MainCategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fronts/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fronts/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_30_211513_create_test_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_01_132002_create_orders_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/category_shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/category_shop.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/include/header-top.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/include/header-top.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/order.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/order.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/shop.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +192,7 @@
       <workItem from="1612387308613" duration="14200000" />
       <workItem from="1612463951942" duration="8235000" />
       <workItem from="1612524651185" duration="4976000" />
-      <workItem from="1612560638291" duration="15527000" />
+      <workItem from="1612560638291" duration="16916000" />
     </task>
     <servers />
   </component>
@@ -280,11 +253,11 @@
       <screen x="0" y="0" width="1536" height="832" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.832@0.0.1536.832" timestamp="1612171962123" />
-    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup" timestamp="1612614791843">
+    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup" timestamp="1612649105664">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
     <state x="431" y="153" width="672" height="678" key="search.everywhere.popup/0.0.1536.832/1920.0.1440.870@0.0.1536.832" timestamp="1612562871327" />
-    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup/0.0.1536.832@0.0.1536.832" timestamp="1612614791843" />
+    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup/0.0.1536.832@0.0.1536.832" timestamp="1612649105664" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
