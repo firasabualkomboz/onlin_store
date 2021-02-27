@@ -11,7 +11,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84aadbb5-4dc2-400d-8473-c631e1fb6a81" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/front/who_are_we.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Helpers/General.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/General.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/MainCategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MainCategoriesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fronts/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fronts/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cart/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cart/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/favorite.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/favorite.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/include/header-top.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/include/header-top.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +166,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cms" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel/cmsblog" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -192,7 +202,11 @@
       <workItem from="1612387308613" duration="14200000" />
       <workItem from="1612463951942" duration="8235000" />
       <workItem from="1612524651185" duration="4976000" />
-      <workItem from="1612560638291" duration="18011000" />
+      <workItem from="1612560638291" duration="19898000" />
+      <workItem from="1612803212051" duration="808000" />
+      <workItem from="1612984022880" duration="2869000" />
+      <workItem from="1613550419069" duration="3147000" />
+      <workItem from="1613923270619" duration="5883000" />
     </task>
     <servers />
   </component>
@@ -227,18 +241,18 @@
       <screen x="0" y="0" width="1536" height="832" />
     </state>
     <state x="532" y="327" key="ComposerInitDialogKey/0.0.1536.832@0.0.1536.832" timestamp="1611921021111" />
-    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1611002756275">
+    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1613563295297">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
-    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.832@0.0.1536.832" timestamp="1611002756275" />
+    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.832@0.0.1536.832" timestamp="1613563295297" />
     <state x="541" y="123" key="NewPhpClassDialog" timestamp="1610760524395">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
     <state x="541" y="123" key="NewPhpClassDialog/0.0.1536.832@0.0.1536.832" timestamp="1610760524395" />
-    <state x="555" y="34" width="981" height="757" key="SettingsEditor" timestamp="1612611841326">
+    <state x="374" y="12" width="981" height="757" key="SettingsEditor" timestamp="1613002730534">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
-    <state x="555" y="34" width="981" height="757" key="SettingsEditor/0.0.1536.832@0.0.1536.832" timestamp="1612611841326" />
+    <state x="374" y="12" width="981" height="757" key="SettingsEditor/0.0.1536.832@0.0.1536.832" timestamp="1613002730534" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1612468668000">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
@@ -253,11 +267,11 @@
       <screen x="0" y="0" width="1536" height="832" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.832@0.0.1536.832" timestamp="1612171962123" />
-    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup" timestamp="1612649105664">
+    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup" timestamp="1613925618269">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
     <state x="431" y="153" width="672" height="678" key="search.everywhere.popup/0.0.1536.832/1920.0.1440.870@0.0.1536.832" timestamp="1612562871327" />
-    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup/0.0.1536.832@0.0.1536.832" timestamp="1612649105664" />
+    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup/0.0.1536.832@0.0.1536.832" timestamp="1613925618269" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -15,7 +15,7 @@
                <ol>
                 <li><a href="/home"><i class="fa fa-home"></i></a></li>
                 <li><a href="{{route('shop')}}">تسوق الأن</a></li>
-                <li> من نحن </li>
+                <li><a href="{{route('front.who_are_we')}}">من نحن </a> </li>
                 <li><a href="/sendemail"> @lang('auth.contact')</a></li>
                </ol>
                 </div>

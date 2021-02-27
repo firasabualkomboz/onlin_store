@@ -35,20 +35,20 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-3">
-                    <h2>الأقسام</h2>
-                    <div class="list-product">
-                        <ol class="list-unstyled">
+{{--                <div class="col-lg-3">--}}
+{{--                    <h2>الأقسام</h2>--}}
+{{--                    <div class="list-product">--}}
+{{--                        <ol class="list-unstyled">--}}
 
 {{--                            @foreach ($categories as $category)--}}
 {{--                                <li class="category_li"><a class="category_a" target="_blank" href="{{route('front.category_shop',[ 'category' => $category->id])}}">{{$category->name}}</a></li>--}}
 {{--                            @endforeach--}}
-                        </ol>
-                    </div>
-                </div>
+{{--                        </ol>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
                 <div class="col-lg-9">
                     <h2>@lang('auth.favorite')</h2>
-
+                    <br>
                     @if($products->isEmpty())
 
                        <h4>لا يوجد عناصر في المفضلة !! </h4>

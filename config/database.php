@@ -15,8 +15,8 @@ return [
     |
     */
 
-//    'default' => env('DB_CONNECTION', 'mysql'),
-    'default' => env('DB_CONNECTION', 'pgsql'),
+   'default' => env('DB_CONNECTION', 'mysql'),
+//    'default' => env('DB_CONNECTION', 'pgsql'),
     /*
     |--------------------------------------------------------------------------
     | Database Connections
@@ -66,22 +66,38 @@ return [
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),
-//            'host' => env('DB_HOST', '127.0.0.1'),
-            'host' => $DATABASE_URL['host'],
-//            'port' => env('DB_PORT', '5432'),
-            'port' => $DATABASE_URL['port'],
-//            'database' => env('DB_DATABASE', 'forge'),
-            'database' => ltrim($DATABASE_URL['path'],"/"),
-//            'username' => env('DB_USERNAME', 'forge'),
-//            'password' => env('DB_PASSWORD', ''),
-            'username' => $DATABASE_URL['user'],
-            'password' =>$DATABASE_URL['pass'],
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '5432'),
+            'database' => env('DB_DATABASE', 'forge'),
+            'username' => env('DB_USERNAME', 'forge'),
+            'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
             'schema' => 'public',
             'sslmode' => 'prefer',
         ],
+
+//        'pgsql' => [
+//            'driver' => 'pgsql',
+//            'url' => env('DATABASE_URL'),
+//            'host' => env('DB_HOST', '127.0.0.1'),
+////            'host' => $DATABASE_URL['host'],
+//            'port' => env('DB_PORT', '5432'),
+////            'port' => $DATABASE_URL['port'],
+////            'database' => env('DB_DATABASE', 'forge'),
+//            'database' => ltrim($DATABASE_URL['path'],"/"),
+//            'username' => env('DB_USERNAME', 'forge'),
+//            'password' => env('DB_PASSWORD', ''),
+////            'username' => $DATABASE_URL['username'],
+////            'password' =>$DATABASE_URL['password'],
+//            'charset' => 'utf8',
+//            'prefix' => '',
+//            'prefix_indexes' => true,
+//            'schema' => 'public',
+//            'sslmode' => 'prefer',
+//
+//        ],
 
         'sqlsrv' => [
             'driver' => 'sqlsrv',

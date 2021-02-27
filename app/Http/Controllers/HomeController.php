@@ -27,6 +27,12 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+
+    public function who_are_we(){
+        return view('front.who_are_we');
+    }
+
+
     public function index(Request $request)
     {
         $products = Product::all();
@@ -60,6 +66,17 @@ class HomeController extends Controller
     }
 
     public function Productdetails($id){
+
+        // $product = Product::with('categories')->findOrFail(1);
+
+        // $categoryIds = $product->categories->pluck('id')->toArray();
+
+        // $similarProducts = Product::has('categories', function ($query) use ($categoryIds) {
+        //     return $query->whereIn('id', $categoryIds);
+        // })->whereNot('id', $product->id)
+        //     ->limit(10)
+        //     ->get();
+
 
         $product = Product::find($id);
         // $productref = Product::where('main_category_id',7)->get(4);
@@ -111,6 +128,20 @@ class HomeController extends Controller
     );
  }
 
+
+ public function same_product(){
+
+    $product = Product::with('categories')->findOrFail(1);
+
+    $categoryIds = $product->categories->pluck('id')->toArray();
+
+    $similarProducts = Product::has('categories', function ($query) use ($categoryIds) {
+        return $query->whereIn('id', $categoryIds);
+    })->whereNot('id', $product->id)
+        ->limit(10)
+        ->get();
+
+ }
 
 
 }

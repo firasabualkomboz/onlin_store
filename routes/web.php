@@ -30,6 +30,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/logout', 'HomeController@logout')->name('home');
 
+//---------------------------------- route who are we ----------------------------------//
+route::get('/who_are_we','HomeController@who_are_we')->name('front.who_are_we');
+//---------------------------------- end who are we ----------------------------------//
 
 //Route::group(['middleware' => 'auth'], function () {
 //    if (Auth::check()) {
@@ -82,3 +85,4 @@ Route::any('/search',function(){
 route::get('/sendemail','SendEmailController@index');
 route::post('/sendemail/send','SendEmailController@send');
 //---------------------------------- end send email ----------------------------------//
+

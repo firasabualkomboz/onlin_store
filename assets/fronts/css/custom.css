@@ -308,11 +308,12 @@ footer{
     margin: 10px;
 }
 .shop-product .card-shop-product{
-    box-shadow: 0 35px 50px -30px rgba(0, 0, 0, 100%);
+    /*box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 40%);*/
     /*margin: 10px;*/
     padding: 10px;
     direction: rtl;
     margin-top: 20%;
+    border-bottom: #000 solid 1px;
 }
 .shop-product .card-shop-product img{
     width: 100%;
@@ -339,7 +340,6 @@ footer{
 }
 .shop-product .card-shop-product .data-product ol li a:hover{
     color: #7FAD39;
-    font-weight: bold;
 }
 /*.shop-product .card-shop-product span{*/
 /*    font-size: 14px;*/
@@ -356,3 +356,11 @@ footer{
     color: #7FAD39;
 }
 
+/* who_are_we */
+
+.who_are_we{
+    text-align: right;
+    margin-top: 10%;
+}
+
+/* who_are_we */

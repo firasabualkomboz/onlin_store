@@ -17,8 +17,9 @@ class MainCategoriesController extends Controller
     public function index(){
 
         $default_lang =get_default_lang();
-        $categories = MainCategory::Where('translation_lang',$default_lang)-> selection()->get();
+        $categories = MainCategory::Where('translation_lang',$default_lang)->selection()->get();
         return view ('admin.maincategories.index',compact('categories'));
+
     }
 
     public function create(){

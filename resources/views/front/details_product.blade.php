@@ -59,6 +59,20 @@
                 <div class="col-lg-12">
                     <div class="section-title related__product__title">
                         <h2>منتجات ذات صلة </h2>
+
+                        <div>
+                            @foreach ($productref as $similer_product)
+
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <img src="{{$similer_product->photoone}}" alt="">
+                                            <h4>{{$similer_product->name}}</h4>
+                                            <h6>{{$similer_product->price}}</h6>
+                                        </div>
+                                    </div>
+                            @endforeach
+                        </div>
+
                     </div>
                 </div>
             </div>

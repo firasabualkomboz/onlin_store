@@ -52,17 +52,17 @@
             <div class="card bg-primary text-white">
                 <div class="card-body">
                     <h3 class="card-titel">
-                        Your Cart
+                      المشتريات
                         <hr>
                     </h3>
                     <div class="card-text">
                         <p>
-                        Total Amount is ${{$cart->totalPrice}}
+                       المبلغ الكلي ${{$cart->totalPrice}}
                         </p>
                         <p>
-                        Total Quantities is {{$cart->totalQty}}
+                      اجمالي الكمية {{$cart->totalQty}}
                         </p>
-                    <a href="{{ route('cart.checkout', $cart->totalPrice)}}" class="btn btn-info">Checkout</a>
+                    <a href="{{ route('cart.checkout', $cart->totalPrice)}}" class="btn btn-info">شراء</a>
                     </div>
                 </div>
             </div>
