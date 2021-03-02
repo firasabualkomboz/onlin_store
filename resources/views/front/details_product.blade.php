@@ -68,6 +68,7 @@
                                             <img src="{{$similer_product->photoone}}" alt="">
                                             <h4>{{$similer_product->name}}</h4>
                                             <h6>{{$similer_product->price}}</h6>
+                                       
                                         </div>
                                     </div>
                             @endforeach
