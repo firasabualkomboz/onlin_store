@@ -10,19 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84aadbb5-4dc2-400d-8473-c631e1fb6a81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/front/who_are_we.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helpers/General.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/General.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/MainCategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MainCategoriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fronts/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fronts/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cart/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cart/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/favorite.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/favorite.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/include/header-top.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/include/header-top.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="84aadbb5-4dc2-400d-8473-c631e1fb6a81" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -166,7 +154,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel/cmsblog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -207,6 +195,7 @@
       <workItem from="1612984022880" duration="2869000" />
       <workItem from="1613550419069" duration="3147000" />
       <workItem from="1613923270619" duration="5883000" />
+      <workItem from="1614759963360" duration="55000" />
     </task>
     <servers />
   </component>
@@ -241,10 +230,11 @@
       <screen x="0" y="0" width="1536" height="832" />
     </state>
     <state x="532" y="327" key="ComposerInitDialogKey/0.0.1536.832@0.0.1536.832" timestamp="1611921021111" />
-    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1613563295297">
-      <screen x="0" y="0" width="1536" height="832" />
+    <state x="597" y="178" key="FileChooserDialogImpl" timestamp="1614760016960">
+      <screen x="74" y="0" width="1462" height="864" />
     </state>
     <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.832@0.0.1536.832" timestamp="1613563295297" />
+    <state x="597" y="178" key="FileChooserDialogImpl/74.0.1462.864/1920.0.1440.870@74.0.1462.864" timestamp="1614760016960" />
     <state x="541" y="123" key="NewPhpClassDialog" timestamp="1610760524395">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
