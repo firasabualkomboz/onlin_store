@@ -1,6 +1,7 @@
 @extends('layouts.bodyfront')
 
 @section('content')
+
     @include('front.include.loder')
     @include('front.include.header-top')
 
@@ -25,7 +26,7 @@
                     </div>
                 </div>
 
-                
+
             </div>
         </div>
 

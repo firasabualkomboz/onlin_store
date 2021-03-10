@@ -13,6 +13,8 @@
     <list default="true" id="84aadbb5-4dc2-400d-8473-c631e1fb6a81" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/include/header-top.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/include/header-top.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/who_are_we.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/who_are_we.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +201,8 @@
       <workItem from="1613550419069" duration="3147000" />
       <workItem from="1613923270619" duration="5883000" />
       <workItem from="1614759963360" duration="55000" />
-      <workItem from="1614857114877" duration="2631000" />
+      <workItem from="1614857114877" duration="5745000" />
+      <workItem from="1615278459696" duration="3734000" />
     </task>
     <servers />
   </component>
@@ -243,10 +246,11 @@
       <screen x="0" y="0" width="1536" height="832" />
     </state>
     <state x="541" y="123" key="NewPhpClassDialog/0.0.1536.832@0.0.1536.832" timestamp="1610760524395" />
-    <state x="374" y="12" width="981" height="757" key="SettingsEditor" timestamp="1613002730534">
-      <screen x="0" y="0" width="1536" height="832" />
+    <state x="212" y="0" width="981" height="757" key="SettingsEditor" timestamp="1615278544432">
+      <screen x="74" y="0" width="1462" height="864" />
     </state>
     <state x="374" y="12" width="981" height="757" key="SettingsEditor/0.0.1536.832@0.0.1536.832" timestamp="1613002730534" />
+    <state x="212" y="0" key="SettingsEditor/74.0.1462.864/1998.0.1362.900@74.0.1462.864" timestamp="1615278544432" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1612468668000">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
