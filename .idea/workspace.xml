@@ -12,9 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="84aadbb5-4dc2-400d-8473-c631e1fb6a81" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/include/header-top.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/include/header-top.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/who_are_we.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/who_are_we.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/favorite.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/favorite.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +157,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel/invoice" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -202,7 +200,12 @@
       <workItem from="1613923270619" duration="5883000" />
       <workItem from="1614759963360" duration="55000" />
       <workItem from="1614857114877" duration="5745000" />
-      <workItem from="1615278459696" duration="3734000" />
+      <workItem from="1615278459696" duration="6345000" />
+      <workItem from="1615449367985" duration="2798000" />
+      <workItem from="1615626818380" duration="1582000" />
+      <workItem from="1615671222704" duration="2022000" />
+      <workItem from="1615905627236" duration="782000" />
+      <workItem from="1618741668082" duration="46000" />
     </task>
     <servers />
   </component>
@@ -237,11 +240,13 @@
       <screen x="0" y="0" width="1536" height="832" />
     </state>
     <state x="532" y="327" key="ComposerInitDialogKey/0.0.1536.832@0.0.1536.832" timestamp="1611921021111" />
-    <state x="597" y="178" key="FileChooserDialogImpl" timestamp="1614760016960">
+    <state x="597" y="178" key="FileChooserDialogImpl" timestamp="1615399159776">
       <screen x="74" y="0" width="1462" height="864" />
     </state>
     <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.832@0.0.1536.832" timestamp="1613563295297" />
     <state x="597" y="178" key="FileChooserDialogImpl/74.0.1462.864/1920.0.1440.870@74.0.1462.864" timestamp="1614760016960" />
+    <state x="597" y="178" key="FileChooserDialogImpl/74.0.1462.864/1998.0.1362.900@74.0.1462.864" timestamp="1615399159776" />
+    <state x="597" y="178" key="FileChooserDialogImpl/74.0.1462.864@74.0.1462.864" timestamp="1615378541400" />
     <state x="541" y="123" key="NewPhpClassDialog" timestamp="1610760524395">
       <screen x="0" y="0" width="1536" height="832" />
     </state>

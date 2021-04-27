@@ -364,3 +364,24 @@ footer{
 }
 
 /* who_are_we */
+
+
+
+/* favorite style  */
+.favorite-product{
+padding-top: 40px;
+padding-bottom: 40px;
+background-color: #F2F3F5;
+}
+.favorite-product .body-favorite{
+    background-color: #fff;
+    border: #545454 solid 1px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.favorite-product .body-favorite a{
+   color: red;
+}
+
+
+/* end favorite style  */
