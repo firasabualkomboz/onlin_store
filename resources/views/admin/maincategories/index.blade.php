@@ -60,8 +60,8 @@
                                             @isset($categories)
 @foreach ($categories as $category)
 <tr>
-    <td> {{$category->name}} </td>
-    <td> {{get_default_lang()}}  </td>
+    <td> {{$category->name}}</td>
+    <td>{{$default_lang}}</td>
     <td> {{$category->getActive()}} </td>
     <td> <img style="width: 100px" height="100px" src="{{$category->photo}} " alt="">  </td>
     <td>

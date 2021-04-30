@@ -373,6 +373,9 @@ padding-top: 40px;
 padding-bottom: 40px;
 background-color: #F2F3F5;
 }
+.favorite-product h2{
+    text-transform: uppercase;
+}
 .favorite-product .body-favorite{
     background-color: #fff;
     border: #545454 solid 1px;

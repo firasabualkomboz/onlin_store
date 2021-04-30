@@ -9,17 +9,20 @@ use App\Http\Requests\LanguageRequest;
 
 class languagesController extends Controller
 {
-   public function index(){
 
-    $languages = Language::select()->paginate(PAGINATION_COUNT);
-    return view('admin.languages.index', compact('languages'));
+public function index(){
 
-   }
+$languages = Language::select()->paginate(PAGINATION_COUNT);
+return view('admin.languages.index', compact('languages'));
+
+} //end index
 
 
-   public function create(){
-    return view ('admin.languages.create');
-   }
+public function create(){
+
+return view ('admin.languages.create');
+
+} //end create
 
 
    public function store(LanguageRequest $request ){
@@ -29,11 +32,10 @@ class languagesController extends Controller
 // return $request->except(['_token']); // هذا برجع json
 
 try{
-
-    Language::create($request->except(['_token']));
-    return redirect()->route('admin.languages')->with(['success'=>'تم الحفظ بنجاح يبشه ']);
+Language::create($request->except(['_token']));
+return redirect()->route('admin.languages')->with(['success'=>'تم إضافة اللغة بنجاح']);
 }catch(\Exception $ex){
-    return redirect()->route('admin.languages')->with(['success'=>'باشا هناك خطأ ما بليزز حاول مرة تانية ']);
+return redirect()->route('admin.languages')->with(['error'=>'يوجد خطأ في إضافة اللغة ']);
 }
 
 
