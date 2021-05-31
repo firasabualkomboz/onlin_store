@@ -53,17 +53,19 @@
     display: inline-block;
     margin: 10px;
  }
- .header-v1 .item-2-v1 ol li a{
+.header-v1 .item-2-v1 ol li a{
 color: #2D2D2D;
- }
-
+}
 
  .header-v1 .item-2-v1 ol li:hover{
-    color: #7fad39;
-    margin: 2px;
     cursor: pointer;
-    font-weight: 700;
     transition: all 1s, height 2s;
+ }
+ .header-v1 .item-2-v1 ol li a:hover{
+    /* color: #7fad39; */
+    /* margin: 2px; */
+    /* font-weight: 700; */
+    color: #7fad39;
  }
 
  .header-v1 .item-3-v1 ol li{
@@ -78,19 +80,18 @@ color: #2D2D2D;
 .cart:hover{
     color: #080808;
     background-color:none;
-    font-size: 15px;
+    /* font-size: 15px; */
     transition: all 1s, height 2s;
 }
  .btn-login{
-     background-color: #7fad39;
-     color: #fff;
-     padding: 10px;
-     border-radius: 10px;
-     border: 0;
-     width: 100px;
+background-color: #fff;
+padding: 10px;
+border: 0;
+width: 100px;
+border: #7fad39 solid 1px;
  }
  .btn-login a{
-    color: #fff;
+    color: #7fad39;
 }
 
 
@@ -130,10 +131,20 @@ ul, ol { direction: rtl;}
     margin: 20px;
 
 }
-.blog__item__text {
-    border-radius: 10px;
+.blog__item {
+background-color: #F3F6FA;
+border-bottom: solid 4px #7fad39;
+min-height: 150px;
+}
+.blog__item:hover{
+border-bottom: solid 4px #000;
+cursor: pointer;
+transition: all 0.2s 0.2s;
 }
 
+.blog__item__text{
+    border: none;
+}
 
 /* cat-product */
 .cat-product {
@@ -267,9 +278,9 @@ footer{
 }
 .category_li :hover{
     color: #7fad39;
-    margin: 2px;
+    /* margin: 2px; */
     cursor: pointer;
-    font-weight: 600;
+    /* font-weight: 600; */
     transition: all .5s, height .3s;
 }
 
@@ -388,3 +399,45 @@ background-color: #F2F3F5;
 
 
 /* end favorite style  */
+
+
+/* start page login user */
+body{
+}
+.body-lgoin-page{
+background-color: #007bff;
+min-height: 70vh;
+border-radius: 10px 0px 0px 10px;
+}
+.body-lgoin-page .text-body{
+padding: 80px;
+
+}
+.body-lgoin-page .text-body h4{
+color: #fff;
+font-weight: 600;
+}
+.body-lgoin-page .text-body p{
+margin-top: 20px;
+color: #fff;
+font-weight: 400;
+}
+.form-login-user{
+margin: auto;
+width: 60%;
+border: 2px solid #FFFF00;
+padding: 10px;
+background-color: #eee;
+}
+.form-login .form-control{
+    border: 0;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+    width: 70%;
+}
+.form-login button{
+    background-color: #007bff;
+    border-radius: 0%;
+    padding: 5px 40px 5px 40px;
+}
+/* end login user */

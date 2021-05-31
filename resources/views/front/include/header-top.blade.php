@@ -46,7 +46,7 @@
                 </li>
 
                 @else
-                <li><button class="btn-login"><a target="_blank" href="/login"><span class="fa fa-user"> تسجيل دخول  </span></a></button></li>
+                <li><button class="btn-login"><a  href="/login"><span class="fa fa-user"> تسجيل دخول  </span></a></button></li>
                 @endif
 
 

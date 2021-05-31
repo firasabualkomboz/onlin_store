@@ -2,6 +2,13 @@
 
 @section('content')
 
+<?php
+function get_language(){
+// \App\Models\Language::active()->select('id','abbr','name','direction')->get();
+ return \App\Models\Language::active()->Selection()->get();
+
+}
+?>
 <div class="app-content content">
 <div class="content-wrapper">
 
@@ -48,6 +55,7 @@ class="la la-ellipsis-v font-medium-3"></i></a>
 method="POST"
 enctype="multipart/form-data">
 @csrf
+
 <div class="form-group">
 <label> صوره القسم </label>
 <label id="projectinput7" class="file center-block">

@@ -35,6 +35,8 @@ class HomeController extends Controller
 
     public function index(Request $request)
     {
+        $text_category = MainCategory::all();
+
         $products = Product::all();
 
         $maincato = MainCategory::where('translation_of',0)->active()->get();
@@ -57,7 +59,7 @@ class HomeController extends Controller
 
 
         return view('front.home',compact('maincato','products','fastionproduct','elcetonic','mobile','cuts','cuts2'
-        ,'buy','buy2' , 'gift' ,'hb','products'
+        ,'buy','buy2' , 'gift' ,'hb','products' ,'text_category',
         ))
         ->with('topcato' , MainCategory::take(20)->get())
         ->with('lastproduct' , Product::orderBy('created_at','desc')->take(3)->get())

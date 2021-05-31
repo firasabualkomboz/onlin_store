@@ -50,6 +50,14 @@ $upto = ['helth','fashone'];
 </div>
 
 </section>
+
+<section>
+    <div class="container">
+        @foreach ($text_category as $text_cat)
+        <p>{{$text_cat->name}}</p>
+        @endforeach
+    </div>
+</section>
 <!-- Hero Section End -->
 
 <!-- Categories Section Begin -->
@@ -102,7 +110,7 @@ $upto = ['helth','fashone'];
 
 <div class="blog__item__text">
 
-<h5><a  style="text-align: right" href="#">شحن آمن وسريع</a></h5>
+<h5><a  style="text-align: right">شحن آمن وسريع</a></h5>
 <p>توصيل داخل غزة بإسعار رمزية  </p>
 </div>
 </div>
@@ -114,7 +122,7 @@ $upto = ['helth','fashone'];
 
 <div class="blog__item__text">
 
-<h5 ><a href="#">أسئلة شائعة</a></h5>
+<h5 ><a>أسئلة شائعة</a></h5>
 <p>إذا كان لديك أي سؤال عن طرق التوصيل أو الشحن يمكنك الحصول على إجابات هنا</p>
 </div>
 </div>
@@ -124,7 +132,7 @@ $upto = ['helth','fashone'];
 <div class="col-lg-4 col-md-4 col-sm-6">
 <div class="blog__item">
 <div class="blog__item__text">
-<h5><a href="#">عندك بضاعة للبيع ؟</a></h5>
+<h5><a >عندك بضاعة للبيع ؟</a></h5>
 <p>إذا لديك منتجات أو بضاعة وحابب تسوقها يمكنك التواصل معنا </p>
 </div>
 </div>

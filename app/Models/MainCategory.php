@@ -6,13 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 use App\Models\SubCategory;
 use App\Models\Section;
 use App\Models\Product;
+use Illuminate\Support\Facades\Config;
 
 class MainCategory extends Model
 {
     protected $table = 'main_categories';
 
     protected $fillable = [
-        'translation_lang', 'translation_of', 'name', 'slug', 'photo', 'active', 'created_at', 'updated_at'
+        'translation_lang', 'translation_of','name', 'slug', 'photo', 'active', 'created_at', 'updated_at'
     ];
 
     protected static function boot(){
@@ -75,7 +76,9 @@ class MainCategory extends Model
       }
 
 
-
+        function get_default_lang(){
+            return Config::get('app.locale');
+        }
 
 
 

@@ -50,7 +50,7 @@
             "database/factories"
         ],
         "fiels":[
-"App/Helpers/General.php"
+        "app/Helpers/General.php"
         ]
     },
     "autoload-dev": {
