@@ -11,11 +11,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84aadbb5-4dc2-400d-8473-c631e1fb6a81" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/uploads/image/product/1624530608image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/souq.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/souq.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/MainCategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MainCategoriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/MainCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/MainCategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/maincategories/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/maincategories/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Observers/MainCaregoryObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/MainCaregoryObserver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fronts/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fronts/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/Product_fac.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cart/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cart/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/shop.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,8 +166,9 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel/invoice" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -177,7 +185,22 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="84aadbb5-4dc2-400d-8473-c631e1fb6a81" name="Default Changelist" comment="" />
@@ -211,23 +234,25 @@
       <workItem from="1618741668082" duration="46000" />
       <workItem from="1619894663879" duration="122000" />
       <workItem from="1620181344373" duration="330000" />
+      <workItem from="1624530428893" duration="4234000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -241,48 +266,10 @@
       <screen x="0" y="0" width="1536" height="832" />
     </state>
     <state x="361" y="57" key="#Plugins/0.0.1536.832@0.0.1536.832" timestamp="1620181501266" />
-    <state x="519" y="206" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612083255516">
+    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup" timestamp="1624561196705">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
-    <state x="519" y="206" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.832@0.0.1536.832" timestamp="1612083255516" />
-    <state x="499" y="171" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612438723340">
-      <screen x="0" y="0" width="1536" height="832" />
-    </state>
-    <state x="499" y="171" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.832@0.0.1536.832" timestamp="1612438723340" />
-    <state x="532" y="327" key="ComposerInitDialogKey" timestamp="1611921021111">
-      <screen x="0" y="0" width="1536" height="832" />
-    </state>
-    <state x="532" y="327" key="ComposerInitDialogKey/0.0.1536.832@0.0.1536.832" timestamp="1611921021111" />
-    <state x="597" y="178" key="FileChooserDialogImpl" timestamp="1615399159776">
-      <screen x="74" y="0" width="1462" height="864" />
-    </state>
-    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.832@0.0.1536.832" timestamp="1613563295297" />
-    <state x="597" y="178" key="FileChooserDialogImpl/74.0.1462.864/1920.0.1440.870@74.0.1462.864" timestamp="1614760016960" />
-    <state x="597" y="178" key="FileChooserDialogImpl/74.0.1462.864/1998.0.1362.900@74.0.1462.864" timestamp="1615399159776" />
-    <state x="597" y="178" key="FileChooserDialogImpl/74.0.1462.864@74.0.1462.864" timestamp="1615378541400" />
-    <state x="212" y="0" width="981" height="757" key="SettingsEditor" timestamp="1615278544432">
-      <screen x="74" y="0" width="1462" height="864" />
-    </state>
-    <state x="374" y="12" width="981" height="757" key="SettingsEditor/0.0.1536.832@0.0.1536.832" timestamp="1613002730534" />
-    <state x="212" y="0" key="SettingsEditor/74.0.1462.864/1998.0.1362.900@74.0.1462.864" timestamp="1615278544432" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1612468668000">
-      <screen x="0" y="0" width="1536" height="832" />
-    </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1536.832@0.0.1536.832" timestamp="1612468668000" />
-    <state x="479" y="130" width="577" height="572" key="find.popup" timestamp="1612443193168">
-      <screen x="0" y="0" width="1536" height="832" />
-    </state>
-    <state x="479" y="130" width="577" height="572" key="find.popup/0.0.1536.832/1920.0.1440.870@0.0.1536.832" timestamp="1612388528641" />
-    <state x="479" y="130" width="577" height="572" key="find.popup/0.0.1536.832@0.0.1536.832" timestamp="1612443193168" />
-    <state x="425" y="189" key="run.anything.popup" timestamp="1612171962123">
-      <screen x="0" y="0" width="1536" height="832" />
-    </state>
-    <state x="425" y="189" key="run.anything.popup/0.0.1536.832@0.0.1536.832" timestamp="1612171962123" />
-    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup" timestamp="1620181556663">
-      <screen x="0" y="0" width="1536" height="832" />
-    </state>
-    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup/0.0.1536.832/1920.0.1440.870@0.0.1536.832" timestamp="1612562871327" />
-    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup/0.0.1536.832@0.0.1536.832" timestamp="1620181556663" />
+    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup/0.0.1536.832@0.0.1536.832" timestamp="1624561196705" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

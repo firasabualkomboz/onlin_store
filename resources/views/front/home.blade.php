@@ -25,7 +25,7 @@ $upto = ['helth','fashone'];
 ?>
 <ul>
 @foreach ($maincato as $topcato)
-<li><a  href="">{{$topcato->name}}</a></li>
+<li><a  href="{{route('front.category_shop',[ 'topcato' => $topcato->id])}}">{{$topcato->name}}</a></li>
 @endforeach
 
 </ul>
@@ -51,13 +51,6 @@ $upto = ['helth','fashone'];
 
 </section>
 
-<section>
-    <div class="container">
-        @foreach ($text_category as $text_cat)
-        <p>{{$text_cat->name}}</p>
-        @endforeach
-    </div>
-</section>
 <!-- Hero Section End -->
 
 <!-- Categories Section Begin -->
@@ -70,7 +63,7 @@ $upto = ['helth','fashone'];
 
 <div class="col-lg-3">
 <div class="categories__item set-bg" data-setbg="{{$cato->photo}}">
-<h5><a >{{$cato->name}}</a></h5>
+<h5><a href="{{route('front.category_shop',[ 'cato' => $cato->id])}}">{{$cato->name}}</a></h5>
 </div>
 </div>
 
@@ -207,7 +200,6 @@ $types = ['all','fashone', 'electoronic','vegetables','sala','fastfood'];
 </div>
 </div>
 </div>
-
 
 <div class="row featured__filter">
 

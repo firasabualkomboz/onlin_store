@@ -324,7 +324,7 @@ footer{
     padding: 10px;
     direction: rtl;
     margin-top: 20%;
-    border-bottom: #000 solid 1px;
+    /* border-bottom: #000 solid 1px; */
 }
 .shop-product .card-shop-product img{
     width: 100%;
@@ -430,14 +430,30 @@ padding: 10px;
 background-color: #eee;
 }
 .form-login .form-control{
-    border: 0;
-    border-bottom: 1px solid #ced4da;
-    border-radius: 0;
-    width: 70%;
+border: 0;
+border-bottom: 1px solid #ced4da;
+border-radius: 0;
+width: 70%;
 }
 .form-login button{
-    background-color: #007bff;
-    border-radius: 0%;
-    padding: 5px 40px 5px 40px;
+background-color: #007bff;
+border-radius: 0%;
+padding: 5px 40px 5px 40px;
 }
 /* end login user */
+
+/* SHOP PRODUCTS */
+.card-product{
+    padding: 10px;
+}
+.card-product img{
+    float: right;
+}
+.card-product .body-product{
+    float: right;
+    margin-right: 10px;
+
+}
+
+
+/* END SHOP PRODUCT */

@@ -12,21 +12,12 @@ use RealRashid\SweetAlert\Facades\Alert;
 
 class HomeController extends Controller
 {
-    /**order
-     * Create a new controller instance.
-     *
-     * @return void
-     */
+
     // public function __construct()
     // {
     //     $this->middleware('auth');
     // }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
 
     public function who_are_we(){
         return view('front.who_are_we');
@@ -139,7 +130,7 @@ class HomeController extends Controller
 
     $similarProducts = Product::has('categories', function ($query) use ($categoryIds) {
         return $query->whereIn('id', $categoryIds);
-    })->whereNot('id', $product->id)
+        })->whereNot('id', $product->id)
         ->limit(10)
         ->get();
 

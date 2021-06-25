@@ -50,7 +50,7 @@
 <div class="category-list">
     <ol class="list-unstyled">
         @foreach($categories as $category)
-            <li class="category_li"><a class="category_a" target="_blank" href="{{route('front.category_shop',[ 'category' => $category->id])}}">{{$category->name }}</a></li>
+            <li class="category_li"><a class="category_a" href="{{route('front.category_shop',[ 'category' => $category->id])}}">{{$category->name }}</a></li>
         @endforeach
 
     </ol>
@@ -76,6 +76,55 @@
 
 </div>
 
+            <div class="row">
+
+
+
+                @foreach ($products as $item_product)
+                @if($products != null)
+                    <div class="col-lg-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                    <div class="col-md-4">
+                    <a href="{{route('front.details_product',['id' => $item_product->id])}}"><img src="{{$item_product['photoone']}}" alt=""></a>
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                    <h5 class="card-title">منتج تجريبي</h5>
+                    <p class="card-text">{{$item_product['price']}} $ </p>
+                    <a href="">Add to fovrite</a>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    @else
+                    <div class="col-lg-4">
+                        <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                        <a href="{{route('front.details_product',['id' => $item_product->id])}}"><img src="{{$item_product['photoone']}}" alt=""></a>
+                        </div>
+                        <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">منتج تجريبي</h5>
+                        <p class="card-text">{{$item_product['price']}} $ </p>
+                        <a href="">Add to fovrite</a>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+
+                @endif
+                @endforeach
+
+
+
+
+
+            </div>
+
 
             <div class="row">
 
@@ -90,7 +139,7 @@
                             <div class="data-product">
                                 <ol class="list-unstyled">
                                     <li><a href="{{ route('front.details_product',[ 'id' => $product->id])}}">{{$product->name}} </a></li>
-                                    <li>20$</li>
+                                    <li>{{$product['price']}}</li>
                                 </ol>
                                 <?php
                                 $favoritelist=\Illuminate\Support\Facades\DB::table('favorite')->rightJoin('product','favorite.product_id','=','product.id')
