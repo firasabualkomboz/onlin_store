@@ -11,18 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84aadbb5-4dc2-400d-8473-c631e1fb6a81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/uploads/image/product/1624530608image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/souq.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/souq.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Observers/MainCaregoryObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/MainCaregoryObserver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fronts/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fronts/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/Product_fac.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cart/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cart/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/shop.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +157,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel/RootsCode" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -234,7 +223,8 @@
       <workItem from="1618741668082" duration="46000" />
       <workItem from="1619894663879" duration="122000" />
       <workItem from="1620181344373" duration="330000" />
-      <workItem from="1624530428893" duration="4234000" />
+      <workItem from="1624530428893" duration="5038000" />
+      <workItem from="1624828485383" duration="1038000" />
     </task>
     <servers />
   </component>
@@ -266,6 +256,14 @@
       <screen x="0" y="0" width="1536" height="832" />
     </state>
     <state x="361" y="57" key="#Plugins/0.0.1536.832@0.0.1536.832" timestamp="1620181501266" />
+    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1624829528984">
+      <screen x="0" y="0" width="1536" height="832" />
+    </state>
+    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.832@0.0.1536.832" timestamp="1624829528984" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1624828754040">
+      <screen x="0" y="0" width="1536" height="832" />
+    </state>
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.832@0.0.1536.832" timestamp="1624828754040" />
     <state x="431" y="153" width="672" height="678" key="search.everywhere.popup" timestamp="1624561196705">
       <screen x="0" y="0" width="1536" height="832" />
     </state>

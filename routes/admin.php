@@ -10,34 +10,36 @@ Route::group(['namespace'=>'Admin' ,  'middleware' => 'auth:admin'], function ()
 
 // ************************************ languages ************************************
 
-    Route::group(['prefix' => 'languages'], function () {
+Route::group(['prefix' => 'languages'], function () {
 
-        Route::get('/', 'languagesController@index')->name('admin.languages');
-        Route::get('create', 'languagesController@create')->name('admin.languages.create');
-        //حفظ اللعة واضافتها
-        Route::post('store', 'languagesController@store')->name('admin.languages.store');
-        Route::get('edit/{id}', 'languagesController@edit')->name('admin.languages.edit');
-        Route::post('update/{id}', 'languagesController@update')->name('admin.languages.update');
-        Route::get('delete/{id}', 'languagesController@destroy')->name('admin.languages.delete');
+Route::get('/', 'languagesController@index')->name('admin.languages');
+Route::get('create', 'languagesController@create')->name('admin.languages.create');
+//حفظ اللعة واضافتها
+Route::post('store', 'languagesController@store')->name('admin.languages.store');
+Route::get('edit/{id}', 'languagesController@edit')->name('admin.languages.edit');
+Route::post('update/{id}', 'languagesController@update')->name('admin.languages.update');
+Route::get('delete/{id}', 'languagesController@destroy')->name('admin.languages.delete');
 
-    });
+});
 // ************************************ languages ************************************
 
 
 
 // ************************************ main categories ************************************
-    Route::group(['prefix' => 'main_categories'], function () {
 
-        Route::get('/', 'MainCategoriesController@index')->name('admin.maincategories');
-        Route::get('create', 'MainCategoriesController@create')->name('admin.maincategories.create');
-        //حفظ اللعة واضافتها
-        Route::post('store', 'MainCategoriesController@store')->name('admin.maincategories.store');
-        Route::get('edit/{id}', 'MainCategoriesController@edit')->name('admin.maincategories.edit');
-        Route::post('update/{id}', 'MainCategoriesController@update')->name('admin.maincategories.update');
-        Route::get('delete/{id}', 'MainCategoriesController@destroy')->name('admin.maincategories.delete');
-        Route::get('changeStatus/{id}', 'MainCategoriesController@changeStatus')->name('admin.maincategories.status');
+Route::group(['prefix' => 'main_categories'], function () {
 
-    });
+Route::get('/', 'MainCategoriesController@index')->name('admin.maincategories');
+Route::get('create', 'MainCategoriesController@create')->name('admin.maincategories.create');
+//حفظ اللعة واضافتها
+Route::post('store', 'MainCategoriesController@store')->name('admin.maincategories.store');
+Route::get('edit/{id}', 'MainCategoriesController@edit')->name('admin.maincategories.edit');
+Route::post('update/{id}', 'MainCategoriesController@update')->name('admin.maincategories.update');
+Route::get('delete/{id}', 'MainCategoriesController@destroy')->name('admin.maincategories.delete');
+Route::get('changeStatus/{id}', 'MainCategoriesController@changeStatus')->name('admin.maincategories.status');
+
+});
+
 // ************************************ end  main categories ************************************
 
 

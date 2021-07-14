@@ -79,7 +79,7 @@ enctype="multipart/form-data">
 <label for="projectinput1"> اسم القسم - {{__('messages.'.$lang -> abbr)}} </label>
 <input type="text" value="" id="name"
 class="form-control"
-placeholder="  "
+placeholder=""
 name="category[{{$index}}][name]">
 @error("category.$index.name")
 <span class="text-danger"> هذا الحقل مطلوب</span>
