@@ -43,6 +43,7 @@ class ProductController extends Controller
                 'photoone'               =>'required|image'
 
             ]);
+            
 
            $photoone = $request->photoone;
            $photoone_new_name = time().$photoone->getClientOriginalName();

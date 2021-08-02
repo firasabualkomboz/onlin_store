@@ -1,7 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Route;
 
-define('PAGINATION_COUNT',10);
+//define('PAGINATION_COUNT',10);
 
 Route::group(['namespace'=>'Admin' ,  'middleware' => 'auth:admin'], function () {
 

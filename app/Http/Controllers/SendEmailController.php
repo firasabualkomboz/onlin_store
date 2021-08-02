@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\SendMails;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\SendEmail;
@@ -27,7 +28,6 @@ class SendEmailController extends Controller
 
         Mail::to('feras.out@gmil.com')->send(new SendEmail($data));
         return back()->with('success', 'شكراً لك تم إرسال الرسالة بنجاح');
-
 
 
     } // end function send

@@ -31,12 +31,19 @@ return view ('admin.languages.create');
 
 // return $request->except(['_token']); // هذا برجع json
 
-try{
-Language::create($request->except(['_token']));
-return redirect()->route('admin.languages')->with(['success'=>'تم إضافة اللغة بنجاح']);
-}catch(\Exception $ex){
-return redirect()->route('admin.languages')->with(['error'=>'يوجد خطأ في إضافة اللغة ']);
-}
+    // dd($request->all());
+
+    try{
+
+    Language::create($request->except(['_token']));
+
+    return redirect()->route('admin.languages')->with(['success'=>'تم إضافة اللغة بنجاح']);
+
+    }catch(\Exception $ex){
+
+    return redirect()->route('admin.languages')->with(['error'=>'يوجد خطأ في إضافة اللغة ']);
+
+    }
 
 
 }

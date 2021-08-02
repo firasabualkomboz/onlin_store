@@ -160,16 +160,19 @@ DB::commit();
 
 
 public function edit($mainCat_id)
+
 {
-//get specific categories and its translations
-$mainCategory = MainCategory::with('categories')
-->selection()
-->find($mainCat_id);
+    
+    //get specific categories and its translations
+    $mainCategory = MainCategory::with('categories')
+    ->selection()
+    ->find($mainCat_id);
 
-if (!$mainCategory)
-return redirect()->route('admin.maincategories')->with(['error' => 'هذا القسم غير موجود ']);
+    if (!$mainCategory)
+    return redirect()->route('admin.maincategories')->with(['error' => 'هذا القسم غير موجود ']);
 
-return view('admin.maincategories.edit', compact('mainCategory'));
+    return view('admin.maincategories.edit', compact('mainCategory'));
+
 }
 
 
