@@ -71,8 +71,6 @@ $upto = ['helth','fashone'];
 
 
 
-
-
 </div>
 </div>
 </div>

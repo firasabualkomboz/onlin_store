@@ -86,3 +86,10 @@ route::get('/sendemail','SendEmailController@index');
 route::post('/sendemail/send','SendEmailController@send');
 //---------------------------------- end send email ----------------------------------//
 
+
+Route::get('/callback',function (){
+    return 'success';
+});
+Route::get('/error',function (){
+    return 'payment failed';
+});

@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\DB;
 class FavoriteController extends Controller
 {
 
+
    public function show_favorite_product(){
 
        $categories = MainCategory::where('translation_of',0)->active()->get();
