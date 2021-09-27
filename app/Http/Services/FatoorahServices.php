@@ -6,7 +6,8 @@ namespace App\Http\Services;
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Request;
 
-class FatoorahServices{
+class FatoorahServices
+{
 
 
     private $base_url;
@@ -26,27 +27,37 @@ class FatoorahServices{
 
     }
 
-    public function buildRequest ($url , $method , $data = [])
+    public function buildRequest($url, $method, $data = [])
     {
-        $request = new Request($method , $this->base_url . $url , $this->headers);
+        $request = new Request($method, $this->base_url . $url, $this->headers);
         if (!$data)
             return false;
-        $response = $this->request_client->send($request,[
+        $response = $this->request_client->send($request, [
             'json' => $data
         ]);
-        if($response->getStatusCode() != 200 ){
+        if ($response->getStatusCode() != 200) {
             return false;
         }
-        $response = json_decode($response->getBody() , true);
+        $response = json_decode($response->getBody(), true);
         return $response;
     }
 
     public function sendPayment($data)
     {
         //$requestData = $this->parsePayemntData(); //
-        return $response = $this->buildRequest('v2/SendPayment' , 'POST' , $data );
+        return $response = $this->buildRequest('v2/SendPayment', 'POST', $data);
 //        if($response){
 //            $this->saveTransactionPayment($pat)
 //        }
+    }
+
+//    public function transactionCallback($request)
+//    {
+//        return $request;
+//    }
+
+    public function getPaymentStatus($data)
+    {
+        return $response = $this->buildRequest('v2/getPaymentStatus', 'POST', $data);
     }
 }

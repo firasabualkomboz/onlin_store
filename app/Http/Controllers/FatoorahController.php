@@ -18,17 +18,30 @@ class FatoorahController extends Controller
     {
         $data = [
 
-            "CustomerName"          => 'test',
-            "NotificationOption"    => "LNK",
-            "InvoiceValue"          => 100,
-            "CustomerEmail"         => 'feras.out@gmail.com',
-            "CallBackUrl"          => 'https://google.com',
-            "ErrorUrl"              => 'https://youtube.com',
-            "Language"              => 'en',
-            "DisplayCurrencyIso"    => 'SAR'
+            "CustomerName" => 'test',
+            "NotificationOption" => "LNK",
+            "InvoiceValue" => 100,
+            "CustomerEmail" => 'feras.out@gmail.com',
+            "CallBackUrl" => 'http://zajil.gaza/api/call_back',
+            "ErrorUrl" => 'https://youtube.com',
+            "Language" => 'en',
+            "DisplayCurrencyIso" => 'SAR'
 
         ];
 
         return $this->fatoorahServices->sendPayment($data);
+    }
+
+    public function paymentCallBack(Request $request)
+
+    {
+        return "this is successfuly thanks feras thanks ! belal " ;
+//        $data = [];
+//        $data['Key'] = $request->payementId;
+//        $data['KeyType'] = 'paymentId';
+//
+////        return $this->fatoorahServices->getPaymentStatus($data);
+//        return  $paymentData = $this->fatoorahServices->getPaymentStatus($data);
+//        // search where invoice id = $paymentData['Data]['InvoiceId];
     }
 }

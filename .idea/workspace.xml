@@ -11,25 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84aadbb5-4dc2-400d-8473-c631e1fb6a81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FatoorahController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Services/FatoorahServices.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/maincategories/5qisN5WQuMmgo0AKCZEkgwthuGws9E3FHKXJ2r6v.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/maincategories/BIVjPfA2358QibnR8dym1DqqlUTA02q1ogG1qCOE.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/maincategories/HqYFcOKm4X1qxH2FSF44vEO7iHDRkUbyS5kUzT6G.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/maincategories/LNkQQQam2H7PUpCKWeaVjL0vCq0L5kA9xDgNbtAB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/maincategories/RC5U8LWO1qxHD5MIHQ9bM6zoJQ2HlMkoyUoYYeUd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/maincategories/gJ27Aw6siRTzHMqQXV9KXRC2dIep6WEEW6TEZDzs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/product/16326146367.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/image/product/16326146467.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/MainCategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MainCategoriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FavoriteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FavoriteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/maincategories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/maincategories/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FatoorahController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FatoorahController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Services/FatoorahServices.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/FatoorahServices.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +231,7 @@
       <workItem from="1627894327800" duration="12495000" />
       <workItem from="1632603177964" duration="3323000" />
       <workItem from="1632643060123" duration="44000" />
-      <workItem from="1632735968912" duration="8394000" />
+      <workItem from="1632735968912" duration="15230000" />
     </task>
     <servers />
   </component>
@@ -311,11 +296,11 @@
       <screen x="0" y="0" width="1536" height="832" />
     </state>
     <state x="410" y="143" width="700" height="530" key="recent.locations.popup/0.0.1536.832@0.0.1536.832" timestamp="1632738691495" />
-    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup" timestamp="1632739283282">
+    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup" timestamp="1632754092140">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
     <state x="431" y="153" width="672" height="678" key="search.everywhere.popup/0.0.1536.832/1998.0.1362.900@0.0.1536.832" timestamp="1632603288480" />
-    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup/0.0.1536.832@0.0.1536.832" timestamp="1632739283282" />
+    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup/0.0.1536.832@0.0.1536.832" timestamp="1632754092140" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
