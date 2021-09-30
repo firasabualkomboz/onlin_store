@@ -11,10 +11,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84aadbb5-4dc2-400d-8473-c631e1fb6a81" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/css/flex-slider.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/css/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/css/jquery.fancybox.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/css/magnific-popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/css/magnific-popup.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/css/nice-select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/css/niceselect.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/css/owl-carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/css/slicknav.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/css/themify-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/fonts/themify.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/fonts/themify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/fonts/themify.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/fonts/themify.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/images/logo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/images/map-marker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/images/payment-method.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/images/payments.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/js/active.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/js/easing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/js/facnybox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/js/finalcountdown.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/js/flex-slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/js/gmap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/js/jquery-migrate-3.0.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/js/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/js/magnific-popup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/js/map-script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/js/nicesellect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/js/onepage-nav.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/js/owl-carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/js/scrollup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/js/slicknav.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/js/waypoints.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/js/ytplayer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/cart.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/checkout.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/include/top-header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/user.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/image/product/1632778611Artboard 4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FatoorahController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FatoorahController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Services/FatoorahServices.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/FatoorahServices.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,8 +228,13 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\souq\assets" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -231,7 +296,8 @@
       <workItem from="1627894327800" duration="12495000" />
       <workItem from="1632603177964" duration="3323000" />
       <workItem from="1632643060123" duration="44000" />
-      <workItem from="1632735968912" duration="15899000" />
+      <workItem from="1632735968912" duration="22330000" />
+      <workItem from="1632827463978" duration="22960000" />
     </task>
     <servers />
   </component>
@@ -255,9 +321,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="536" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1627895166518">
-      <screen x="74" y="0" width="1462" height="864" />
+    <state x="485" y="180" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1632916343175">
+      <screen x="0" y="0" width="1536" height="832" />
     </state>
+    <state x="485" y="180" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.832@0.0.1536.832" timestamp="1632916343175" />
     <state x="536" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/74.0.1462.864@74.0.1462.864" timestamp="1627895166518" />
     <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1632643101842">
       <screen x="0" y="0" width="1536" height="832" />
@@ -283,10 +350,14 @@
     </state>
     <state width="1493" height="192" key="GridCell.Tab.0.right/0.0.1536.832/1998.0.1362.900@0.0.1536.832" timestamp="1632603698934" />
     <state width="1493" height="192" key="GridCell.Tab.0.right/0.0.1536.832@0.0.1536.832" timestamp="1632617187856" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1632643071707">
+    <state x="350" y="117" key="SettingsEditor" timestamp="1632920720386">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.832@0.0.1536.832" timestamp="1632643071707" />
+    <state x="350" y="117" key="SettingsEditor/0.0.1536.832@0.0.1536.832" timestamp="1632920720386" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1632827467275">
+      <screen x="0" y="0" width="1536" height="832" />
+    </state>
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.832@0.0.1536.832" timestamp="1632827467275" />
     <state x="437" y="147" width="661" height="558" key="find.popup" timestamp="1632738649890">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
@@ -296,11 +367,15 @@
       <screen x="0" y="0" width="1536" height="832" />
     </state>
     <state x="410" y="143" width="700" height="530" key="recent.locations.popup/0.0.1536.832@0.0.1536.832" timestamp="1632738691495" />
-    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup" timestamp="1632754092140">
+    <state x="425" y="189" key="run.anything.popup" timestamp="1632916178279">
+      <screen x="0" y="0" width="1536" height="832" />
+    </state>
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.832@0.0.1536.832" timestamp="1632916178279" />
+    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup" timestamp="1632999938949">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
     <state x="431" y="153" width="672" height="678" key="search.everywhere.popup/0.0.1536.832/1998.0.1362.900@0.0.1536.832" timestamp="1632603288480" />
-    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup/0.0.1536.832@0.0.1536.832" timestamp="1632754092140" />
+    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup/0.0.1536.832@0.0.1536.832" timestamp="1632999938949" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

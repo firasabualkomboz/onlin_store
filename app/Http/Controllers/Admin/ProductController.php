@@ -72,8 +72,7 @@ class ProductController extends Controller
             $cart->add($product);
             // dd($cart);
             session()->put('cart', $cart);
-            // return redirect()->route('front.home')->with('success', 'تم اضافة المنتج الى السلة'); //false
-           return redirect()->route('cart.show')->with('success', 'تم اضافة المنتج الى السلة'); //true
+           return redirect()->route('cart.show')->with('success', 'The Product has been added to the cart'); //true
 
         }//end add to cart product
 
@@ -119,8 +118,6 @@ class ProductController extends Controller
         } else {
             return redirect()->back();
         }
-
-
     }
 
     public function destroy($id){

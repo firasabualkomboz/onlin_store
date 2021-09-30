@@ -16,16 +16,17 @@ class FatoorahController extends Controller
 
     public function payOrder()
     {
+
         $data = [
 
-            "CustomerName" => 'test',
-            "NotificationOption" => "LNK",
-            "InvoiceValue" => 100,
-            "CustomerEmail" => 'feras.out@gmail.com',
-            "CallBackUrl" => 'http://zajil.gaza/api/call_back',
-            "ErrorUrl" => 'https://youtube.com',
-            "Language" => 'en',
-            "DisplayCurrencyIso" => 'SAR'
+            "CustomerName"          => 'test',
+            "NotificationOption"    => "LNK",
+            "InvoiceValue"          => 200,
+            "CustomerEmail"         => 'feras.out@gmail.com',
+            "CallBackUrl"           => 'http://zajil.gaza/api/call_back',
+            "ErrorUrl"              => 'https://facebook.com',
+            "Language"              => 'en',
+            "DisplayCurrencyIso"    => 'SAR'
 
         ];
 
@@ -35,7 +36,7 @@ class FatoorahController extends Controller
     public function paymentCallBack(Request $request)
 
     {
-        return "this is successfuly thanks feras thanks ! belal " ;
+        return "this is successfuly thanks feras thanks  " ;
 //        $data = [];
 //        $data['Key'] = $request->payementId;
 //        $data['KeyType'] = 'paymentId';

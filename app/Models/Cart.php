@@ -12,7 +12,6 @@ class Cart
 
     public function __Construct($cart = null) {
         if($cart) {
-
             $this->items = $cart->items;
             $this->totalQty = $cart->totalQty;
             $this->totalPrice = $cart->totalPrice;
@@ -33,8 +32,6 @@ class Cart
             'qty' => 0,
             'photoone' => $product->photoone,
         ];
-
-
 
          if( !array_key_exists($product->id, $this->items)) {
             $this->items[$product->id] = $item ;
