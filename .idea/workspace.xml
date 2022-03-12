@@ -230,7 +230,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel/click-shop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -336,68 +336,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="485" y="180" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1632916343175">
-      <screen x="0" y="0" width="1536" height="832" />
-    </state>
-    <state x="485" y="180" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.832@0.0.1536.832" timestamp="1632916343175" />
-    <state x="536" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/74.0.1462.864@74.0.1462.864" timestamp="1627895166518" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1633190294920">
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1647118610851">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1633190294920" />
-    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.832@0.0.1536.832" timestamp="1633069110633" />
-    <state width="1493" height="192" key="GridCell.Tab.0.bottom" timestamp="1632617187856">
-      <screen x="0" y="0" width="1536" height="832" />
-    </state>
-    <state width="1493" height="192" key="GridCell.Tab.0.bottom/0.0.1536.832/1998.0.1362.900@0.0.1536.832" timestamp="1632603698934" />
-    <state width="1493" height="192" key="GridCell.Tab.0.bottom/0.0.1536.832@0.0.1536.832" timestamp="1632617187856" />
-    <state width="1493" height="192" key="GridCell.Tab.0.center" timestamp="1632617187856">
-      <screen x="0" y="0" width="1536" height="832" />
-    </state>
-    <state width="1493" height="192" key="GridCell.Tab.0.center/0.0.1536.832/1998.0.1362.900@0.0.1536.832" timestamp="1632603698934" />
-    <state width="1493" height="192" key="GridCell.Tab.0.center/0.0.1536.832@0.0.1536.832" timestamp="1632617187856" />
-    <state width="1493" height="192" key="GridCell.Tab.0.left" timestamp="1632617187854">
-      <screen x="0" y="0" width="1536" height="832" />
-    </state>
-    <state width="1493" height="192" key="GridCell.Tab.0.left/0.0.1536.832/1998.0.1362.900@0.0.1536.832" timestamp="1632603698934" />
-    <state width="1493" height="192" key="GridCell.Tab.0.left/0.0.1536.832@0.0.1536.832" timestamp="1632617187854" />
-    <state width="1493" height="192" key="GridCell.Tab.0.right" timestamp="1632617187856">
-      <screen x="0" y="0" width="1536" height="832" />
-    </state>
-    <state width="1493" height="192" key="GridCell.Tab.0.right/0.0.1536.832/1998.0.1362.900@0.0.1536.832" timestamp="1632603698934" />
-    <state width="1493" height="192" key="GridCell.Tab.0.right/0.0.1536.832@0.0.1536.832" timestamp="1632617187856" />
-    <state x="555" y="86" key="SettingsEditor" timestamp="1633074508403">
-      <screen x="0" y="0" width="1536" height="832" />
-    </state>
-    <state x="555" y="86" key="SettingsEditor/0.0.1536.832@0.0.1536.832" timestamp="1633074508403" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1633182399332">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.816@0.0.1536.816" timestamp="1633182399332" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.832@0.0.1536.832" timestamp="1633017065819" />
-    <state x="75" y="202" width="1350" height="630" key="dock-window-1" timestamp="1633183224648">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="75" y="202" width="1350" height="630" key="dock-window-1/0.0.1536.816@0.0.1536.816" timestamp="1633183224648" />
-    <state x="437" y="147" width="661" height="558" key="find.popup" timestamp="1632738649890">
-      <screen x="0" y="0" width="1536" height="832" />
-    </state>
-    <state x="437" y="147" width="661" height="558" key="find.popup/0.0.1536.832@0.0.1536.832" timestamp="1632738649890" />
-    <state x="490" y="153" width="629" height="558" key="find.popup/74.0.1462.864@74.0.1462.864" timestamp="1627894696663" />
-    <state x="410" y="143" width="700" height="530" key="recent.locations.popup" timestamp="1632738691495">
-      <screen x="0" y="0" width="1536" height="832" />
-    </state>
-    <state x="410" y="143" width="700" height="530" key="recent.locations.popup/0.0.1536.832@0.0.1536.832" timestamp="1632738691495" />
-    <state x="425" y="189" key="run.anything.popup" timestamp="1632916178279">
-      <screen x="0" y="0" width="1536" height="832" />
-    </state>
-    <state x="425" y="189" key="run.anything.popup/0.0.1536.832@0.0.1536.832" timestamp="1632916178279" />
-    <state x="431" y="150" width="672" height="665" key="search.everywhere.popup" timestamp="1633205217707">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="431" y="150" width="672" height="665" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1633205217707" />
-    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup/0.0.1536.832/1998.0.1362.900@0.0.1536.832" timestamp="1632603288480" />
-    <state x="431" y="153" width="672" height="678" key="search.everywhere.popup/0.0.1536.832@0.0.1536.832" timestamp="1633087581946" />
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1647118610851" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
