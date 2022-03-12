@@ -99,3 +99,4 @@ Route::get('/addToCart/{product}' , 'MainController@addToCart')->name('zajil.car
 Route::get('/shopping-cart' , 'MainController@showCart')->name('zajil.cart.show');
 Route::get('/checkout/{amount}' , 'MainController@checkout')->name('zajil.cart.checkout');
 Route::post('/payCheckOut','MainController@payCheckOut')->name('zajil.payCheckOut');
+Route::get('call_back','MainController@paymentCallBack');

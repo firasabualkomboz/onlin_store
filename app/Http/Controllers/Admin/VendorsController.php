@@ -31,11 +31,6 @@ class VendorsController extends Controller
         $categories = MainCategory::where('translation_of',0)->active()->get();
          return view('admin.vendors.create',compact('categories'));
 
-
-
-
-
-
     }
 
     public function edit($id){

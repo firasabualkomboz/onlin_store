@@ -122,3 +122,7 @@ Route::group(['namespace' => 'Admin', 'middleware' => 'guest:admin'], function (
 //     return 'feras';
 //
 // });
+
+Route::get('admin-test' , function(){
+    return true; 
+});

@@ -7,6 +7,7 @@ use App\Models\Cart;
 use App\Models\MainCategory;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class MainController extends Controller
 {
@@ -52,28 +53,50 @@ class MainController extends Controller
 
     public function checkout($amount)
     {
-        return view('checkout',compact('amount'));
+        return view('checkout',compact('amount'),[
+            'cart' => new Cart(session()->get('cart' )),
+
+        ]);
     }
 
     public function payCheckOut(Request $request)
     {
-        $amount = $request->amount;
+//        if (Auth::user()){
+            $amount = $request->amount;
+        $userName = Auth::user()->name;
+        $userEmail = Auth::user()->email;
         $data = [
 
-            "CustomerName"          => 'test',
-            "NotificationOption"    => "LNK",
-            "InvoiceValue"          => $amount,
-            "CustomerEmail"         => 'feras.out@gmail.com',
-            "CallBackUrl"           => 'http://zajil.gaza/api/call_back',
-            "ErrorUrl"              => 'https://facebook.com',
-            "Language"              => 'en',
-            "DisplayCurrencyIso"    => 'KWD'//  SAR
+            "CustomerName" => "feras",
+            "NotificationOption" => "LNK",
+            "InvoiceValue" => $amount,
+            "CustomerEmail" => $userEmail,
+            "CallBackUrl" => 'http://zajil.gaza/call_back',
+            "ErrorUrl" => 'https://facebook.com',
+            "Language" => 'en',
+            "DisplayCurrencyIso" => 'KWD'//  SAR
 
         ];
 
-        $paymentData= $this->fatoorahServices->sendPayment($data);
-        $payment_Url =   $paymentData['Data']['InvoiceURL'];
-        return redirect($payment_Url) ;
+        $paymentData = $this->fatoorahServices->sendPayment($data);
+        $payment_Url = $paymentData['Data']['InvoiceURL'];
+        return redirect($payment_Url);
+//        }else{
+//        abort(403);
+//        }
+
+    }
+    public function paymentCallBack(Request $request)
+
+    {
+        return "this is successfuly thanks feras thanks" ;
+        $data = [];
+        $data['Key'] = $request->payementId;
+        $data['KeyType'] = 'paymentId';
+
+//        return $this->fatoorahServices->getPaymentStatus($data);
+        return  $paymentData = $this->fatoorahServices->getPaymentStatus($data);
+        // search where invoice id = $paymentData['Data]['InvoiceId];
     }
 
 

@@ -2,6 +2,7 @@
 
 use App\Models\Product;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,9 +16,9 @@ class DatabaseSeeder extends Seeder
         $this->call(UsersTableSeeder::class);
         // $this->call(ProductTableSeeder::class);
         // $this->call(CategorySeeder::class);
-        // $this->call(ProductSeeder::class);
+        $this->call(ProductSeeder::class);
         // Product::factory(10)->create();
-        factory(Product::class,10)->make();
+        //factory(Product::class,10)->make();
 
     }
 }

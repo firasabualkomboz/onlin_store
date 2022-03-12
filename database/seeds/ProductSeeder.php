@@ -20,14 +20,11 @@ class ProductSeeder extends Seeder
         $faker = Faker::create();
 
         foreach (range(1, 10) as $index)  {
-            DB::table('products')->insert([
-                'name'                      => $faker->city,
-                'photoone'                  => $faker-> image('public/storage/images',640,480, null, false,),
-                'price'                     => $faker->numberBetween($min = 500, $max = 8000),
-                'main_category_id'          =>function () {
-                    return factory(App\Models\MainCategory::class)->create()->id;
-                } ,
-
+            DB::table('product')->insert([
+                'name'               => $faker->colorName,
+                'price'              => $faker->randomDigit,
+                'main_category_id'   => $main_category_id,
+                'photoone' => $faker->imageUrl($width = 550, $height = 750),
             ]);
             }
 

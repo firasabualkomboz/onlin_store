@@ -1,12 +1,12 @@
 <!-- Preloader -->
-<div class="preloader">
-    <div class="preloader-inner">
-        <div class="preloader-icon">
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-</div>
+{{--<div class="preloader">--}}
+{{--    <div class="preloader-inner">--}}
+{{--        <div class="preloader-icon">--}}
+{{--            <span></span>--}}
+{{--            <span></span>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div>--}}
 <!-- End Preloader -->
 
 
@@ -20,8 +20,8 @@
                     <!-- Top Left -->
                     <div class="top-left">
                         <ul class="list-main">
-                            <li><i class="ti-headphone-alt"></i> +060 (800) 801-582</li>
-                            <li><i class="ti-email"></i> support@shophub.com</li>
+                            <li><i class="ti-headphone-alt"></i> +00 (970) 598082086</li>
+                            <li><i class="ti-email"></i> zajil@gmail.com</li>
                         </ul>
                     </div>
                     <!--/ End Top Left -->
@@ -53,7 +53,7 @@
                 <div class="col-lg-2 col-md-2 col-12">
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                        <a href="index.html"><img src="{{asset('assets/user/images/logo.png')}}" alt="logo"></a>
                     </div>
                     <!--/ End Logo -->
                     <!-- Search Form -->

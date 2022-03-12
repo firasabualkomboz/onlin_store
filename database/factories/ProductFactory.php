@@ -2,7 +2,7 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Product;
+use App\Models\Product;
 use Faker\Generator as Faker;
 
 $factory->define(Product::class, function (Faker $faker) {
@@ -11,11 +11,10 @@ $factory->define(Product::class, function (Faker $faker) {
     $url_image = 'https://fakeimg.pl/300/';
     return [
 
-        'name'               => $this->faker->colorName,
-        'price'              => $this->faker->price,
-        'main_category_id'   =>$main_category_id,
-        // 'photoone'           =>$this->faker->imageUrl(),
-        'photoone'           =>null,
+        'name'               => $faker->colorName,
+        'price'              => $faker->randomDigit,
+        'main_category_id'   => $main_category_id,
+        'photoone' => $faker->image('assets/images/maincategories',640,480, null, false),
 
     ];
 });

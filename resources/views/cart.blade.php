@@ -345,26 +345,5 @@
     <!-- Modal end -->
 
 
-    <!-- End Footer Top -->
-        <div class="copyright">
-            <div class="container">
-                <div class="inner">
-                    <div class="row">
-                        <div class="col-lg-6 col-12">
-                            <div class="left">
-                                <p>Copyright © 2021 <a href="#" target="_blank">Feras A. Abu Alkomboz</a>  -  All Rights Reserved.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="right">
-                                <img src="{{asset('assets/user/images/payments.png')}}" alt="#">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- /End Footer Area -->
-
+    @include('include.footer')
 @endsection

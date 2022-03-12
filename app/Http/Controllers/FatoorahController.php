@@ -36,7 +36,7 @@ class FatoorahController extends Controller
     public function paymentCallBack(Request $request)
 
     {
-        return "this is successfuly thanks feras thanks  " ;
+        return "this is successfuly thanks feras thanks" ;
 //        $data = [];
 //        $data['Key'] = $request->payementId;
 //        $data['KeyType'] = 'paymentId';

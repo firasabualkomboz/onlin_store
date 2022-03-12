@@ -2,7 +2,6 @@
 @section('content')
 
     @include('include.top-header')
-
         <!-- Header Inner -->
         <div class="header-inner">
             <div class="container">
