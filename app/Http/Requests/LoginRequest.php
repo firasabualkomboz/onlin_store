@@ -33,10 +33,9 @@ class LoginRequest extends FormRequest
     public function messages()
     {
         return [
-     'email.required' => 'بليز الايميل مطلوب يبشه ',
-     'email.email' => 'اكتب ايميل صالج يبشه ، طيب مش سعيد ؟ ',
-     'password.required' => 'ايييه يبشه كلمة المرور يبشه '
+            'email.required' => 'بليز الايميل مطلوب يبشه ',
+            'email.email' => 'اكتب ايميل صالج يبشه ، طيب مش سعيد ؟ ',
+            'password.required' => 'ايييه يبشه كلمة المرور يبشه '
         ];
     }
-
 }

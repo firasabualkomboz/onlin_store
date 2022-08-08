@@ -16,83 +16,88 @@ use Cartalyst\Stripe\Laravel\Facades\Stripe;
 class ProductController extends Controller
 
 {
-        public function index(){
+    public function index()
+    {
 
-        return view ('admin.product.index')->with('product',Product::all());
+        return view('admin.product.index')->with('product', Product::all());
 
-        } //end fun index
+    } //end fun index
 
 
-        public function create(){
+    public function create()
+    {
 
-        $maincategory = MainCategory::where('translation_of',0)->active()->get();
+        $maincategory = MainCategory::where('translation_of', 0)->active()->get();
 
-        return view('admin.product.create',compact('maincategory'))->with('subsection',Section::all());
+        return view('admin.product.create', compact('maincategory'))->with('subsection', Section::all());
 
+    }
+
+
+    public function store(Request $request)
+    {
+
+
+        $this->validate($request, [
+
+            'name' => 'required',
+            'price' => 'required',
+            'main_category_id' => 'required',
+            'photoone' => 'required|image'
+
+        ]);
+
+
+        $photoone = $request->photoone;
+        $photoone_new_name = time() . $photoone->getClientOriginalName();
+        $photoone->move('uploads/image/product/', $photoone_new_name);
+
+
+        $product = Product::create([
+            'name' => $request->name,
+            'price' => $request->price,
+            'main_category_id' => $request->main_category_id,
+            'photoone' => 'uploads/image/product/' . $photoone_new_name,
+        ]);
+
+        return redirect()->back();
+    }
+
+
+    public function addToCart(Product $product)
+    {
+
+        if (session()->has('cart')) {
+            $cart = new Cart(session()->get('cart'));
+        } else {
+            $cart = new Cart();
+        }
+        $cart->add($product);
+        // dd($cart);
+        session()->put('cart', $cart);
+        return redirect()->route('cart.show')->with('success', 'The Product has been added to the cart'); //true
+
+    }//end add to cart product
+
+
+    public function showCart()
+    {
+
+        if (session()->has('cart')) {
+            $cart = new Cart(session()->get('cart'));
+        } else {
+            $cart = null;
         }
 
+        return view('cart.show', compact('cart'));
+    }
 
-        public function store(Request $request){
+    public function checkout($amount)
+    {
 
-
-            $this->validate($request,[
-
-                'name'                   => 'required',
-                'price'                  =>  'required',
-                'main_category_id'       => 'required',
-                'photoone'               =>'required|image'
-
-            ]);
-            
-
-           $photoone = $request->photoone;
-           $photoone_new_name = time().$photoone->getClientOriginalName();
-           $photoone->move('uploads/image/product/',$photoone_new_name);
-
-
-            $product = Product::create ([
-                'name'  => $request->name,
-                'price'  => $request->price,
-                'main_category_id'  => $request->main_category_id,
-                'photoone'  =>  'uploads/image/product/'.$photoone_new_name,
-            ]);
-
-            return redirect()->back();
-        }
-
-
-
-        public function addToCart(Product $product) {
-
-            if (session()->has('cart')) {
-                $cart = new Cart(session()->get('cart'));
-            } else {
-                $cart = new Cart();
-            }
-            $cart->add($product);
-            // dd($cart);
-            session()->put('cart', $cart);
-           return redirect()->route('cart.show')->with('success', 'The Product has been added to the cart'); //true
-
-        }//end add to cart product
-
-
-        public function showCart() {
-
-            if (session()->has('cart')) {
-                $cart = new Cart(session()->get('cart'));
-            } else {
-                $cart = null;
-            }
-
-            return view('cart.show', compact('cart'));
-        }
-
-        public function checkout($amount) {
-
-            return view('cart.checkout',compact('amount'));
-            // return $amount;
-        }
+        return view('cart.checkout', compact('amount'));
+        // return $amount;
+    }
 
     public function charge(Request $request)
     {
@@ -109,7 +114,7 @@ class ProductController extends Controller
         if ($chargeId) {
             // save order in orders table ...
             auth()->user()->orders()->create([
-                'cart' => serialize( session()->get('cart'))
+                'cart' => serialize(session()->get('cart'))
             ]);
 
             // clearn cart
@@ -120,7 +125,8 @@ class ProductController extends Controller
         }
     }
 
-    public function destroy($id){
+    public function destroy($id)
+    {
         try {
 
             $product = Product::find($id);
@@ -138,7 +144,6 @@ class ProductController extends Controller
         }
 
     }
-
 
 
 }
